@@ -7,11 +7,11 @@ using UnityEngine;
 public class WordManager : MonoBehaviour
 {
     [Header("Word Operations")]
-    public TextMeshProUGUI WordToDisplay;
-    private string CurrentWord;
-    private string RemainingWord;
-    private int Index = 0;
-    private bool NewWord = true;
+    public TextMeshProUGUI WordToDisplay; // the text we want to continously update
+    private string CurrentWord; // stores the new text value
+    private string RemainingWord; // stores how many letters we gotta type more
+    private int Index = 0; // indexing each character of the generated text
+    private bool NewWord = true; // a bool to ensure that we can generate a new word, in start obviously we can
 
     private void Start()
     {
@@ -20,7 +20,7 @@ public class WordManager : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log(Index);
+        Debug.Log(Index); 
         Debug.Log(RemainingWord[Index]);
         InputControls(); // Checking for player input
     }
@@ -37,11 +37,11 @@ public class WordManager : MonoBehaviour
 
     void InputControls()
     {
-        if (Input.anyKeyDown)
+        if (Input.anyKeyDown) // for every input the computer receives
         {
-            foreach (KeyCode keyCode in System.Enum.GetValues(typeof(KeyCode)))
+            foreach (KeyCode keyCode in System.Enum.GetValues(typeof(KeyCode))) // for each values we press in all types of input
             {
-                if (Input.GetKeyDown(keyCode))
+                if (Input.GetKeyDown(keyCode)) // if we pass any value from the keyboard
                 {
                     TypeLetter(keyCode.ToString()); // Pass the key pressed as a string
                 }
@@ -49,42 +49,44 @@ public class WordManager : MonoBehaviour
         }
     }
 
-    void TypeLetter(string nextLetter)
+    void TypeLetter(string nextLetter) // method used for typing letter, only IF we are writing the correct letter
     {
-        if (CheckForCorrectLetter(nextLetter))
+        if (CheckForCorrectLetter(nextLetter)) // nextLetter is the keyCode converted to string
         {
             RemoveLetter(); // Remove the correct letter from the word
         }
         // Optionally, handle incorrect letter typing here
     }
 
-    public bool CheckForCorrectLetter(string checkingLetter)
+    public bool CheckForCorrectLetter(string checkingLetter) // a bool which returns a true/false, dependent on if we are writing the correct letter
     {
         Debug.Log(checkingLetter);
-        if (Index < RemainingWord.Length && RemainingWord[Index].ToString().ToLower() == checkingLetter.ToLower())
+        if (Index < RemainingWord.Length && RemainingWord[Index].ToString().ToLower() == checkingLetter.ToLower()) 
+        //if the character we are checking upon, if we calculate its position and ensure that it has to be lesser than the string's final position in number. 
+        // AND the index of the actual word in lowercase if its equal to what we type
         {
-            return true;
+            return true; // return true
         }
-        else if(Index > RemainingWord.Length || RemainingWord[Index].ToString().ToLower() != checkingLetter.ToLower())
+        else if(Index > RemainingWord.Length || RemainingWord[Index].ToString().ToLower() != checkingLetter.ToLower()) // else if the opposite
         {
-            return false;
+            return false; // false
             
         }
-        return false;
+        return false; // at start, its always false.
     }
 
-    void RemoveLetter()
+    void RemoveLetter() // the process of removing the letter which we have typed correctly
     {
-        RemainingWord = RemainingWord.Remove(0, 1);
-        WordToDisplay.text = RemainingWord; 
-        if (Index < RemainingWord.Length)
+        RemainingWord = RemainingWord.Remove(0, 1); // substring the 1st letter
+        WordToDisplay.text = RemainingWord; // update the text variable
+        if (Index < RemainingWord.Length) // as long as we havent reached the final length
         {
-            Index++;
+            Index++; // increase the index
         }
-        if (HasCompleted())
+        if (HasCompleted()) // if all the characters of the word is 0, means if we typdd all of them correctly
         {
-            NewWord = true;
-            GenerateWord(); 
+            NewWord = true; 
+            GenerateWord(); // generate the new word 
         }
     }
 
