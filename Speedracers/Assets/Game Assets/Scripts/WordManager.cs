@@ -13,9 +13,11 @@ public class WordManager : MonoBehaviour
     private string RemainingWord; // stores how many letters we gotta type more
     private int Index = 0; // indexing each character of the generated text
     private bool NewWord = true; // a bool to ensure that we can generate a new word, in start obviously we can
+    public bool CanJump = false;
 
     private void Start()
     {
+        CanJump = false;
         GenerateWord(); // Generating a random word at start
     }
 
@@ -75,17 +77,26 @@ public class WordManager : MonoBehaviour
 
     void RemoveLetter() // the process of removing the letter which we have typed correctly
     {
+
         RemainingWord = RemainingWord.Remove(0, 1); // substring the 1st letter
         WordToDisplay.text = RemainingWord; // update the text variable
         if (HasCompleted()) // if all the characters of the word is 0, means if we typdd all of them correctly
         {
             NewWord = true;
             GenerateWord(); // generate the new word 
+            CanJump = true;
+            StartCoroutine(Revoking(0.2f));
         }
     }
 
     public bool HasCompleted()
     {
         return RemainingWord.Length == 0; // If we written the entire word, then return a bool to it.
+    }
+
+    IEnumerator Revoking(float time)
+    {
+        yield return new WaitForSeconds(time);
+        CanJump = false;
     }
 }
