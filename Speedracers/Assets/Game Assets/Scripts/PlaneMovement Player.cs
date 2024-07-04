@@ -7,18 +7,30 @@ public class PlaneMovementPlayer : MonoBehaviour
     public WordManager wordManager;
     public float JumpPower;
     public Rigidbody2D rb;
+    private bool AllowedToJump = true;
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();   
+        rb = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        wordManager = FindObjectOfType<WordManager>();
-        if(wordManager.CanJump == true)
+        wordManager = FindObjectOfType<WordManager>(); // to access the components of the word manager script. 
+        if (AllowedToJump)
         {
-            rb.velocity = new Vector2(rb.velocity.x, JumpPower);
+            if (wordManager.CanJump == true)
+            {
+                rb.velocity = new Vector2(rb.velocity.x, JumpPower);
+            }
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Ground" || collision.gameObject.tag == "Pipe")
+        {
+            AllowedToJump = false;
         }
     }
 }

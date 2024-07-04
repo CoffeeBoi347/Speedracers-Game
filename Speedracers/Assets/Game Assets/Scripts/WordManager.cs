@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using static System.Runtime.CompilerServices.RuntimeHelpers;
 
 public class WordManager : MonoBehaviour
 {
     public float charactersTyped;
     [Header("Word Operations")]
     public TextMeshProUGUI WordToDisplay; // the text we want to continously update
+    public TextMeshProUGUI WordsBeingTyped; // words you are typing
     private string CurrentWord; // stores the new text value
     private string RemainingWord; // stores how many letters we gotta type more
     private int Index = 0; // indexing each character of the generated text
@@ -53,6 +55,7 @@ public class WordManager : MonoBehaviour
     {
         if (CheckForCorrectLetter(nextLetter)) // nextLetter is the keyCode converted to string
         {
+            WordsBeingTyped.text += nextLetter; // for typing off the words you're writing
             RemoveLetter(); // Remove the correct letter from the word
         }
         // Optionally, handle incorrect letter typing here
@@ -82,6 +85,7 @@ public class WordManager : MonoBehaviour
         WordToDisplay.text = RemainingWord; // update the text variable
         if (HasCompleted()) // if all the characters of the word is 0, means if we typdd all of them correctly
         {
+            WordsBeingTyped.text = string.Empty;
             NewWord = true;
             GenerateWord(); // generate the new word 
             CanJump = true;
