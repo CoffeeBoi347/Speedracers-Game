@@ -7,9 +7,11 @@ public class PlaneMovementPlayer : MonoBehaviour
     public WordManager wordManager;
     public float JumpPower;
     public Rigidbody2D rb;
+    public ParticleSystem SmokeFX;
     private bool AllowedToJump = true;
     void Start()
     {
+        SmokeFX.Stop();
         rb = GetComponent<Rigidbody2D>();
     }
 
@@ -22,6 +24,7 @@ public class PlaneMovementPlayer : MonoBehaviour
             if (wordManager.CanJump == true)
             {
                 rb.velocity = new Vector2(rb.velocity.x, JumpPower);
+                SmokeFX.Play();
             }
         }
     }

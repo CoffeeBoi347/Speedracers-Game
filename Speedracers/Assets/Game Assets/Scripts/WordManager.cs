@@ -16,6 +16,7 @@ public class WordManager : MonoBehaviour
     private int Index = 0; // indexing each character of the generated text
     private bool NewWord = true; // a bool to ensure that we can generate a new word, in start obviously we can
     public bool CanJump = false;
+    public ButtonsManager buttonsManager;
 
     private void Start()
     {
@@ -88,13 +89,13 @@ public class WordManager : MonoBehaviour
             WordsBeingTyped.text = string.Empty;
             NewWord = true;
             GenerateWord(); // generate the new word 
-            CanJump = true;
-            StartCoroutine(Revoking(0.2f));
         }
     }
 
     public bool HasCompleted()
     {
+        CanJump = true;
+        StartCoroutine(Revoking(0.05f));
         return RemainingWord.Length == 0; // If we written the entire word, then return a bool to it.
     }
 
