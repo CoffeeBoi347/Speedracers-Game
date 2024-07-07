@@ -12,6 +12,6 @@ public class GroundRotate : MonoBehaviour
 
     private void LateUpdate()
     {
-        ZSpeed += 0.00001f;
+        ZSpeed += 0.01f;
     }
 }

@@ -9,8 +9,10 @@ public class PlaneMovementPlayer : MonoBehaviour
     public Rigidbody2D rb;
     public ParticleSystem SmokeFX;
     private bool AllowedToJump = true;
+    public AudioSource SmokeFXAudio;
     void Start()
     {
+        SmokeFXAudio.Stop();
         SmokeFX.Stop();
         rb = GetComponent<Rigidbody2D>();
     }
@@ -25,6 +27,7 @@ public class PlaneMovementPlayer : MonoBehaviour
             {
                 rb.velocity = new Vector2(rb.velocity.x, JumpPower);
                 SmokeFX.Play();
+                SmokeFXAudio.Play();
             }
         }
     }
