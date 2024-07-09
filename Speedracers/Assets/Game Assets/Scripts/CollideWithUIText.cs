@@ -12,6 +12,7 @@ public class CollideWithUIText : MonoBehaviour
     public Transform endPos;
     public float speed;
     public ParticleSystem Explosion;
+    public AudioSource explodeSFX;
 
     private float timer = 0f;  // Timer variable
 

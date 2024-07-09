@@ -8,10 +8,16 @@ public class PlaneMovementPlayer : MonoBehaviour
     public float JumpPower;
     public Rigidbody2D rb;
     public ParticleSystem SmokeFX;
-    private bool AllowedToJump = true;
+    public bool AllowedToJump = true;
     public AudioSource SmokeFXAudio;
+    public bool HasCollided = false;
+    public bool CollidedWithPipe = false;
+    public bool CollidedBoundary;
     void Start()
     {
+        CollidedBoundary = false;
+        CollidedWithPipe = false;
+        HasCollided = false;
         SmokeFXAudio.Stop();
         SmokeFX.Stop();
         rb = GetComponent<Rigidbody2D>();
@@ -34,9 +40,21 @@ public class PlaneMovementPlayer : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        wordManager.AllowToAdd = false;
         if (collision.gameObject.tag == "Ground" || collision.gameObject.tag == "Pipe")
         {
+            HasCollided = true;
             AllowedToJump = false;
+        }
+
+        if(collision.gameObject.tag == "Pipe")
+        {
+            CollidedWithPipe = true;
+        }
+
+        if(collision.gameObject.tag == "Boundary")
+        {
+            CollidedBoundary = true;
         }
     }
 }

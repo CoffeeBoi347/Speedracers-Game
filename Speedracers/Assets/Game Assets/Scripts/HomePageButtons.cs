@@ -30,7 +30,7 @@ public class HomePageButtons : MonoBehaviour
     }
     public void TutorialPage()
     {
-
+        CreditsGObj.SetActive(true);
     }
 
     public void NextScene()

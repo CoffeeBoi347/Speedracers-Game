@@ -7,7 +7,8 @@ using static System.Runtime.CompilerServices.RuntimeHelpers;
 
 public class WordManager : MonoBehaviour
 {
-    public float charactersTyped;
+    public float charactersTyped; // for storing score
+    public PlaneMovementPlayer playerMovementPlayer;
     [Header("Word Operations")]
     public TextMeshProUGUI WordToDisplay; // the text we want to continously update
     public TextMeshProUGUI WordsBeingTyped; // words you are typing
@@ -16,10 +17,19 @@ public class WordManager : MonoBehaviour
     private int Index = 0; // indexing each character of the generated text
     private bool NewWord = true; // a bool to ensure that we can generate a new word, in start obviously we can
     public bool CanJump = false;
+    public int JumpsCount = 0;
+    public float TimeSurvived;
+    public float WPM;
     public AudioSource TypingSFX;
+    private int WordsCompleted;
+    public float Rating;
+    public int actualRating;
+    public bool AllowToAdd;
     private void Start()
     {
+        AllowToAdd = false;
         TypingSFX.Stop();
+        playerMovementPlayer = FindObjectOfType<PlaneMovementPlayer>();
         CanJump = false; // you cant jump in starting
         GenerateWord(); // Generating a random word at start
     }
@@ -28,6 +38,14 @@ public class WordManager : MonoBehaviour
     {
         Debug.Log(RemainingWord[Index]);
         InputControls(); // Checking for player input
+
+        if(!playerMovementPlayer.HasCollided == true)
+        {
+            StartCoroutine(CountText(1));
+        }
+
+        WPM = WordsCompleted / (TimeSurvived / 120);
+        CalculateRating();
     }
 
     void GenerateWord()
@@ -46,7 +64,8 @@ public class WordManager : MonoBehaviour
         {
             if (Input.GetKeyDown(keyCode)) // if we pass any value from the keyboard
             {
-                charactersTyped += 1;
+                if(AllowToAdd == true)
+                    charactersTyped += 1;
                 TypeLetter(keyCode.ToString()); // Pass the key pressed as a string
             }
         }
@@ -87,12 +106,14 @@ public class WordManager : MonoBehaviour
         {
             WordsBeingTyped.text = string.Empty;
             NewWord = true;
+            WordsCompleted++;
             GenerateWord(); // generate the new word 
         }
     }
 
     public bool HasCompleted()
     {
+        JumpsCount++;
         CanJump = true;
         TypingSFX.Play();
         StartCoroutine(Revoking(0.05f));
@@ -103,5 +124,37 @@ public class WordManager : MonoBehaviour
     {
         yield return new WaitForSeconds(time);
         CanJump = false;
+    }
+
+    IEnumerator CountText(int time)
+    {
+        yield return new WaitForSeconds(time);
+        TimeSurvived += Time.deltaTime;
+    }
+
+    void CalculateRating()
+    {
+        if (TimeSurvived > 0)
+        {
+            // Calculate accuracy as a percentage
+            float accuracy = charactersTyped > 0 ? ((float)WordsCompleted / charactersTyped) * 100 : 0;
+            // if characters typed are more than 0, then we divide the no. of words we write by the characters and
+            // multiply it by 100, else... if characters typed are 0 then multiply by 0. ofc result will be 0 -_-
+
+            // Calculate WPM
+            float wpm = WordsCompleted / (TimeSurvived / 120);
+
+            // Normalize each metric to a scale of 0 to 10
+            float accuracyScore = Mathf.Clamp(accuracy / 10, 0, 10);
+            float wpmScore = Mathf.Clamp(wpm / 10, 0, 10);
+            float wordsCompletedScore = Mathf.Clamp(WordsCompleted / 10, 0, 10);
+
+            // Calculate the average of the three scores
+            Rating = (int)((accuracyScore + wpmScore + wordsCompletedScore) / 3);
+        }
+        else
+        {
+            Rating = 0;
+        }
     }
 }
