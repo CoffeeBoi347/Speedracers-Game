@@ -6,6 +6,7 @@ public class CollideWithUIText : MonoBehaviour
 {
     public GameObject UIButton;
     public GameObject PlayButton;
+    public GameObject MultiplayerButton;
     public GameObject CreditsButton;
     public GameObject TutorialButton;
     public Transform startPos;
@@ -20,6 +21,7 @@ public class CollideWithUIText : MonoBehaviour
     {
         Explosion.Stop();
         PlayButton.SetActive(false);
+        MultiplayerButton.SetActive(false);
         CreditsButton.SetActive(false);
         TutorialButton.SetActive(false);
     }
@@ -50,6 +52,7 @@ public class CollideWithUIText : MonoBehaviour
             UIButton.SetActive(false);
             Explosion.Play();
             PlayButton.SetActive(true);
+            MultiplayerButton.SetActive(true);
             TutorialButton.SetActive(true);
             CreditsButton.SetActive(true);
         }

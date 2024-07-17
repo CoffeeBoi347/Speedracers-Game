@@ -25,6 +25,7 @@ public class WordManager : MonoBehaviour
     public float Rating;
     public int actualRating;
     public bool AllowToAdd;
+    public bool HasTyped;
     private void Start()
     {
         AllowToAdd = false;
@@ -64,6 +65,7 @@ public class WordManager : MonoBehaviour
         {
             if (Input.GetKeyDown(keyCode)) // if we pass any value from the keyboard
             {
+                HasTyped = true;
                 if(AllowToAdd == true)
                     charactersTyped += 1;
                 TypeLetter(keyCode.ToString()); // Pass the key pressed as a string

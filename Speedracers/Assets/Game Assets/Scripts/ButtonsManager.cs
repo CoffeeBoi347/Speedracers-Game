@@ -19,6 +19,18 @@ public class ButtonsManager : MonoBehaviour
         Time.timeScale = 0f;
     }
 
+    private void Update()
+    {
+        if (wordManager.HasTyped == true)
+        {
+            wordManager.AllowToAdd = true;
+            Time.timeScale = 1f;
+            SetTime = true;
+            float Timer = Time.timeSinceLevelLoad;
+            typeYourText.SetActive(false);
+            StartText.text = "Time: " + Timer.ToString();
+        }
+    }
     public void NextScene()
     {
         SetTime = true;
