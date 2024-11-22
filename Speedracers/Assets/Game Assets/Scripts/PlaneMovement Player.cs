@@ -8,13 +8,18 @@ public class PlaneMovementPlayer : MonoBehaviour
     public float JumpPower;
     public Rigidbody2D rb;
     public ParticleSystem SmokeFX;
+    public float speed;
     public bool AllowedToJump = true;
     public AudioSource SmokeFXAudio;
     public bool HasCollided = false;
     public bool CollidedWithPipe = false;
     public bool CollidedBoundary;
+    public CoinScript coinSc;
+    public ParticleSystem blastStart;
     void Start()
     {
+        coinSc = FindObjectOfType<CoinScript>();
+        blastStart.Stop();
         CollidedBoundary = false;
         CollidedWithPipe = false;
         HasCollided = false;
@@ -31,11 +36,12 @@ public class PlaneMovementPlayer : MonoBehaviour
         {
             if (wordManager.CanJump == true)
             {
-                rb.velocity = new Vector2(rb.velocity.x, JumpPower);
+                rb.velocity = new Vector2(speed , JumpPower);
                 SmokeFX.Play();
                 SmokeFXAudio.Play();
             }
         }
+
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -55,6 +61,19 @@ public class PlaneMovementPlayer : MonoBehaviour
         if(collision.gameObject.tag == "Boundary")
         {
             CollidedBoundary = true;
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.gameObject.tag == "Start")
+        {
+            blastStart.Play();
+        }
+
+        if(collision.gameObject.tag == "Coin")
+        {
+            coinSc.coins += 1;
         }
     }
 }

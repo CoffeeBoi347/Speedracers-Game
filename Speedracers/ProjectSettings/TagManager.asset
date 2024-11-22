@@ -7,11 +7,17 @@ TagManager:
   - Ground
   - Pipe
   - Boundary
+  - Start
+  - Obstacle2
+  - Wall
+  - Road
+  - Enemy
+  - Bullet
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player
   - Water
   - UI
   - 

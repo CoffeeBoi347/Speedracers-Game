@@ -1,0 +1,292 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3236935738152236282
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8112319530405727039}
+  - component: {fileID: 4137428509718776317}
+  m_Layer: 0
+  m_Name: WordGenerator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8112319530405727039
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3236935738152236282}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 301.58832, y: 177.68062, z: -3.7612848}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5892537866368853168}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4137428509718776317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3236935738152236282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96baeb8c768623f41a3f97e4b5427e71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  words:
+  - apple
+  - banana
+  - cherry
+  - date
+  - elderberry
+  - fig
+  - grape
+  - honeydew
+  - kiwi
+  - lemon
+  - mango
+  - nectarine
+  - orange
+  - papaya
+  - quince
+  - raspberry
+  - strawberry
+  - tangerine
+  - ugli
+  - watermelon
+  - apricot
+  - blackberry
+  - blueberry
+  - cantaloupe
+  - dragonfruit
+  - elderflower
+  - fig
+  - guava
+  - huckleberry
+  - ita
+  - jackfruit
+  - kumquat
+  - lychee
+  - melon
+  - nectarine
+  - olive
+  - passionfruit
+  - quince
+  - rhubarb
+  - soursop
+  - tamarind
+  - ugli
+  - vanilla
+  - wolfberry
+  - xigua
+  - yam
+  - zucchini
+  - avocado
+  - pear
+  - plum
+  - extraterrestrial
+  - the
+  - or
+  - and
+  - is
+  - her
+  - kale
+  - characteristic
+  - recommendation
+  - constitutional
+  - correspondence
+  - matrix
+  - division
+  - go
+  - jaw
+  - rib
+  - cashew
+  - chocolate
+  - gamedev
+  - entertainment
+  - professionals
+  - pledge
+  - potatoes
+  - cream
+  - what
+  - if
+  - gods
+  - mythology
+  - humans
+  - war
+  - swords
+  - humanity
+  - had
+  - its
+  - time
+  - reality
+  - poor
+  - families
+  - crash
+  - runway
+  - emergency
+  - couldnt
+  - changes
+  - worlds
+  - wars
+  - totality
+  - external
+  - tiffin
+  - muffin
+  - computer
+  - programming
+  - kidzone
+  - strawberry
+  - touch
+  - hands
+  - great
+  - man
+  - woman
+  - girls
+  - ramen
+  - business
+  - sweet
+  - bitter
+  - job
+  - struggle
+  - mathematics
+  - overcome
+  - python
+  - csharp
+  - java
+  - html
+  - css
+  - package
+  - college
+  - university
+  - max
+  - jack
+  - mahesh
+  - salmankhan
+  - sayan
+  - digital
+  - data
+  - structures
+  - algorithms
+  - android
+  - wish
+  - develop
+  - sweetheart
+  - humanity
+  - cracker
+  - water
+  - priority
+  - space
+  - economics
+  - theory
+  - timetable
+  - insert
+  - dates
+  - cloud
+  - physicist
+  - tutor
+  - oral
+  - at
+  - whenever
+  - wherever
+--- !u!1 &6221344967228586940
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9081929080556197044}
+  - component: {fileID: 1306165006150428868}
+  m_Layer: 0
+  m_Name: WordManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9081929080556197044
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6221344967228586940}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5892537866368853168}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1306165006150428868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6221344967228586940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25440136eea071549820b4b97972a486, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  charactersTyped: 0
+  playerMovementPlayer: {fileID: 0}
+  WordToDisplay: {fileID: 0}
+  WordsBeingTyped: {fileID: 0}
+  CanJump: 0
+  JumpsCount: 0
+  TimeSurvived: 0
+  WPM: 0
+  TypingSFX: {fileID: 0}
+  Rating: 0
+  actualRating: 0
+  AllowToAdd: 0
+  HasTyped: 0
+--- !u!1 &6324729415854184360
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5892537866368853168}
+  m_Layer: 0
+  m_Name: WordOperations
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5892537866368853168
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6324729415854184360}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 9081929080556197044}
+  - {fileID: 8112319530405727039}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

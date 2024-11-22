@@ -19,7 +19,9 @@ public class WordGenerator : MonoBehaviour
         "worlds", "wars", "totality", "external", "tiffin", "muffin", "computer", "programming", "kidzone",
         "strawberry", "touch", "hands", "great", "man", "woman", "girls", "ramen", "business", "sweet", "bitter",
         "job", "struggle", "mathematics", "overcome", "python", "csharp", "java", "html", "css", "package", "college",
-        "university", "max", "jack", "mahesh", "salmankhan", "sayan", "digital", "data", "structures", "algorithms", "android"};
+        "university", "max", "jack", "mahesh", "salmankhan", "sayan", "digital", "data", "structures", "algorithms", "android",
+        "wish", "develop", "sweetheart", "humanity", "cracker", "water", "priority", "space", "economics", "theory", "timetable",
+        "insert", "dates", "cloud", "physicist", "tutor", "oral", "at", "whenever", "wherever"};
 
 
     public string GetRandomWord()
