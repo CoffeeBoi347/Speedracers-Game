@@ -18,9 +18,9 @@ public class MenuItem : MonoBehaviour, IMenu
     }
     
     private void Start()
-{
-    GameManagerMultiplayer.Instance.AddMenu(this);
-}
+    {
+        GameManagerMultiplayer.Instance.AddMenu(this);
+    }
 
     public void OpenMenu()
     {

@@ -1,3 +1,4 @@
+using Photon.Pun;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -22,6 +23,11 @@ public class HomePageButtons : MonoBehaviour
         HasClicked = true;
         NextScene();
 
+    }
+
+    public void OpenMultiplayer()
+    {
+        SceneManager.LoadScene("MultiplayerLobby");
     }
 
     public void Credits()

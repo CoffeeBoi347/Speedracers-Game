@@ -9,41 +9,60 @@ using Photon.Realtime;
 
 public class UIManager : Singleton<UIManager>
 {
+    [Header("Footer")]
+
+    [SerializeField] private TMP_Text playerNameTxt;
+
     [Header("Nickname")]
 
     [SerializeField] private Button playButton;
-    [SerializeField] private TMP_Text playerName;
+    [SerializeField] private TMP_InputField playerNameField;
 
     [Header("RoomName")]
 
     [SerializeField] private Slider timeOfGame;
     [SerializeField] private TMP_Text roomName;
     [SerializeField] private Slider maxPlayersVal;
-    [SerializeField] private Button createRoomButton;
+    [SerializeField] private Button viewRoomButton;
+    [SerializeField] private Button joinRoomButton;
+
+
+    [Header("Create Room")]
+    public TMP_InputField roomNameField;
+
+
+    [SerializeField] private Button createRoom;
 
     private void Awake()
     {
+        if(playerNameField == null)
+        {
+            return;
+        }
         if (PlayerPrefs.HasKey("PlayerName"))
         {
-            playerName.text = PlayerPrefs.GetString("PlayerName");
+            playerNameField.text = PlayerPrefs.GetString("PlayerName");
         }
         else
         {
-            playerName.text = "Player_" + Random.Range(1000, 9999);
+            playerNameField.text = "Player_" + Random.Range(1000, 9999);
         }
     }
 
     private void Start()
     {
         playButton.onClick.AddListener(OnPlayButtonPressed);
+        createRoom.onClick.AddListener(OnCreateRoomPressed);
+        viewRoomButton.onClick.AddListener(OnRoomListButtonPressed);
     }
 
     void OnPlayButtonPressed()
     {
         if (!PhotonNetwork.IsConnected)
         {
+            playerNameTxt.text = playerNameField.text;
             Debug.Log("Connecting...");
-            PhotonNetworkManager.instance.ConnectToServer(playerName.text);
+            PhotonNetworkManager.instance.ConnectToServer(playerNameField.text);
         }
         else
         {
@@ -51,9 +70,15 @@ public class UIManager : Singleton<UIManager>
         }
     }
 
+    void OnWaitingArea()
+    {
+        GameManagerMultiplayer.Instance.OpenMenu(EMenuName.WaitingArea);
+        Debug.Log("Waitin  for players...");
+    }
+
     private void OnRoomListButtonPressed()
     {
-        GameManagerMultiplayer.Instance.OpenMenu(EMenuName.RoomList);
+        GameManagerMultiplayer.Instance.OpenMenu(EMenuName.ViewAllRooms);
         Debug.Log("Room List Pressed");
     }
 
@@ -64,6 +89,7 @@ public class UIManager : Singleton<UIManager>
         roomOptions.IsVisible = true;
         roomOptions.MaxPlayers = (int)maxPlayersVal.value;
         roomOptions.EmptyRoomTtl = 45000;
-
-    }
+        PhotonNetworkManager.instance.CreateRoom(roomName.text, roomOptions);
+        Debug.Log("Room created!");
+    } 
 }
