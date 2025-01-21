@@ -46,4 +46,5 @@ public enum EMenuName
     WaitingArea,
     ViewAllRooms,
     Disconnected,
+    FailedToCreateRoom
 }

@@ -648,6 +648,7 @@ MonoBehaviour:
   roomName: {fileID: 9155160599438207959}
   playersJoined: {fileID: 4361494518959495793}
   roomStatusImage: {fileID: 3506201811336552448}
+  roomJoin: {fileID: 8795758628477057841}
 --- !u!1 &8891434516892367568
 GameObject:
   m_ObjectHideFlags: 0

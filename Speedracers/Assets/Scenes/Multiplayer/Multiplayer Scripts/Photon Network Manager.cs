@@ -9,7 +9,7 @@ using TMPro;
 
 public class PhotonNetworkManager : MonoBehaviourPunCallbacks
 {
-    [SerializeField] private RoomName roomListPrefab;
+    [SerializeField] private GameObject roomListPrefab;
     [SerializeField] private Transform roomListParent;
     public static PhotonNetworkManager instance; // instance of the network manager
     public GameObject Nickname;
@@ -18,7 +18,7 @@ public class PhotonNetworkManager : MonoBehaviourPunCallbacks
     [SerializeField] private GameObject playerInfoParent;
     [SerializeField] private Button playerStatus;
     private string roomName;
-
+    [SerializeField] private TextMeshProUGUI roomErrorMessage;
     private string time;
 
     ExitGames.Client.Photon.Hashtable testing;
@@ -71,7 +71,6 @@ public class PhotonNetworkManager : MonoBehaviourPunCallbacks
         base.OnConnected();
         Debug.Log($"Connected to {PhotonNetwork.ServerAddress}");
         Debug.Log($"Btw your IP address is {PhotonNetwork.IsMasterClient}");
-        PublicRoomRandom();
     }
 
     public void OnCreateRoomButtonClicked()
@@ -102,9 +101,8 @@ public class PhotonNetworkManager : MonoBehaviourPunCallbacks
         Debug.Log($"Current Nickname: {PhotonNetwork.NickName}");
         GameManagerMultiplayer.Instance.OpenMenu(EMenuName.WaitingArea);
         PhotonNetwork.AutomaticallySyncScene = true;
-        StartCoroutine(AddBots(3, 3));
     }
-
+    
     public override void OnPlayerEnteredRoom(Player newPlayer)
     {
         base.OnPlayerEnteredRoom(newPlayer);
@@ -207,52 +205,74 @@ public class PhotonNetworkManager : MonoBehaviourPunCallbacks
         }
     }
 
-    private void PublicRoomRandom()
-    {
-        string randomRoomName = "Room_" + UnityEngine.Random.Range(1000, 9999);
-        RoomOptions roomOptions = new RoomOptions
-        {
-            MaxPlayers = 4,
-            IsVisible = true,
-            IsOpen = true
-        };
-
-        Debug.Log($"Creating Room: {randomRoomName}");
-        PhotonNetwork.CreateRoom(randomRoomName, roomOptions);
-    }
-
-
     public override void OnRoomListUpdate(List<RoomInfo> roomList)
     {
         base.OnRoomListUpdate(roomList);
-
-        for (int i = 0; i >= roomListParent.childCount; i++)
-        {
-            Destroy(roomListParent.GetChild(i).gameObject);
-        }
+        Debug.Log("OnRoomListUpdate");
+        Debug.Log($"{roomList.Count} roomListCount");
 
         foreach (var i in roomList)
         {
-            RoomName rName = Instantiate(roomListPrefab, roomListParent);
-            rName.roomName.text = i.Name.ToString();
-            rName.playersJoined.text = (i.PlayerCount + "/" + i.MaxPlayers).ToString();
+            Instantiate(roomListPrefab, roomListParent);
+            var roomListScriptComponent = roomListPrefab.GetComponent<RoomName>();
 
+            Debug.Log("Room instantiated!!! OnRoomListUpdate");
+            roomListScriptComponent.roomName.text = i.Name.ToString();
+            roomListScriptComponent.playersJoined.text = (i.PlayerCount + "/" + i.MaxPlayers).ToString();
+            RefreshRoomList();
             if (i.IsOpen)
             {
                 if (i.PlayerCount >= i.MaxPlayers / 2)
                 {
-                    rName.roomStatusImage.color = Color.red;
+                    roomListScriptComponent.roomStatusImage.color = Color.red;
                 }
                 else
                 {
-                    rName.roomStatusImage.color = Color.green;
+                    roomListScriptComponent.roomStatusImage.color = Color.green;
                 }
             }
             else
             {
-                rName.roomStatusImage.color = Color.red;
-                rName.roomJoin.interactable = false;
+                roomListScriptComponent.roomStatusImage.color = Color.red;
+                roomListScriptComponent.roomJoin.interactable = false;
             }
         }
     }
+
+    private void RefreshRoomList()
+    {
+
+        PhotonNetwork.GetCustomRoomList(TypedLobby.Default, string.Empty);
+
+        foreach (Transform child in roomListParent)
+        {
+            Destroy(child.gameObject);
+        }
+
+        foreach (RoomInfo roomInfo in roomListParent)
+        {
+            Instantiate(roomListPrefab, roomListParent);
+            var roomListScriptComponent = roomListPrefab.GetComponent<RoomName>();
+            roomListScriptComponent.roomName.text = roomInfo.Name;
+            roomListScriptComponent.playersJoined.text = $"{roomInfo.PlayerCount}/{roomInfo.MaxPlayers}";
+
+            if (roomInfo.IsOpen)
+            {
+                if (roomInfo.PlayerCount >= roomInfo.MaxPlayers / 2)
+                {
+                    roomListScriptComponent.roomStatusImage.color = Color.red;
+                }
+                else
+                {
+                    roomListScriptComponent.roomStatusImage.color = Color.green;
+                }
+            }
+            else
+            {
+                roomListScriptComponent.roomStatusImage.color = Color.red;
+                roomListScriptComponent.roomJoin.interactable = false;
+            }
+        }
+    }
+
 }

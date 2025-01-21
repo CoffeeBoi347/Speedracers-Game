@@ -609,6 +609,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 770226129}
     m_Modifications:
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (15)
@@ -694,7 +698,7 @@ PrefabInstance:
     - target: {fileID: 1807442510773908198, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: coinsText
       value: 
-      objectReference: {fileID: 1133761819}
+      objectReference: {fileID: 0}
     - target: {fileID: 6944299046475468449, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 55.22
@@ -757,6 +761,10 @@ PrefabInstance:
       propertyPath: speed
       value: 1.84
       objectReference: {fileID: 0}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (6)
@@ -844,7 +852,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &26817008
 Transform:
   m_ObjectHideFlags: 0
@@ -1398,6 +1406,10 @@ PrefabInstance:
       propertyPath: speed
       value: 1.84
       objectReference: {fileID: 0}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (42)
@@ -1472,6 +1484,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 770226129}
     m_Modifications:
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (32)
@@ -1554,6 +1570,10 @@ PrefabInstance:
       propertyPath: speed
       value: -0.85
       objectReference: {fileID: 0}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (44)
@@ -1846,6 +1866,10 @@ PrefabInstance:
       propertyPath: speed
       value: -0.85
       objectReference: {fileID: 0}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (56)
@@ -1927,7 +1951,7 @@ PrefabInstance:
     - target: {fileID: 1807442510773908198, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: coinsText
       value: 
-      objectReference: {fileID: 1133761819}
+      objectReference: {fileID: 0}
     - target: {fileID: 6944299046475468449, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 82.37
@@ -2077,7 +2101,7 @@ PrefabInstance:
     - target: {fileID: 1807442510773908198, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: coinsText
       value: 
-      objectReference: {fileID: 1133761819}
+      objectReference: {fileID: 0}
     - target: {fileID: 6944299046475468449, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 51.66
@@ -2273,7 +2297,7 @@ PrefabInstance:
     - target: {fileID: 1807442510773908198, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: coinsText
       value: 
-      objectReference: {fileID: 1133761819}
+      objectReference: {fileID: 0}
     - target: {fileID: 6944299046475468449, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 97.01
@@ -2454,7 +2478,7 @@ PrefabInstance:
     - target: {fileID: 1807442510773908198, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: coinsText
       value: 
-      objectReference: {fileID: 1133761819}
+      objectReference: {fileID: 0}
     - target: {fileID: 6944299046475468449, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 71.53
@@ -2517,6 +2541,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 770226129}
     m_Modifications:
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -2682,7 +2710,7 @@ PrefabInstance:
     - target: {fileID: 1807442510773908198, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: coinsText
       value: 
-      objectReference: {fileID: 1133761819}
+      objectReference: {fileID: 0}
     - target: {fileID: 6944299046475468449, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 61.62
@@ -2745,6 +2773,10 @@ PrefabInstance:
       propertyPath: speed
       value: -2
       objectReference: {fileID: 0}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -2834,7 +2866,7 @@ PrefabInstance:
     - target: {fileID: 1807442510773908198, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: coinsText
       value: 
-      objectReference: {fileID: 1133761819}
+      objectReference: {fileID: 0}
     - target: {fileID: 6944299046475468449, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 91.67
@@ -2981,6 +3013,10 @@ PrefabInstance:
       propertyPath: speed
       value: 1.84
       objectReference: {fileID: 0}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (52)
@@ -3064,6 +3100,10 @@ PrefabInstance:
       propertyPath: speed
       value: 0.86
       objectReference: {fileID: 0}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (25)
@@ -3138,6 +3178,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1059942358}
     m_Modifications:
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (4)
@@ -3742,6 +3786,10 @@ PrefabInstance:
       propertyPath: speed
       value: 0.34
       objectReference: {fileID: 0}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (33)
@@ -4308,6 +4356,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1832821331}
     m_Modifications:
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (32)
@@ -4393,7 +4445,7 @@ PrefabInstance:
     - target: {fileID: 1807442510773908198, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: coinsText
       value: 
-      objectReference: {fileID: 1133761819}
+      objectReference: {fileID: 0}
     - target: {fileID: 6944299046475468449, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 67.83
@@ -4456,6 +4508,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1832821331}
     m_Modifications:
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -4537,7 +4593,7 @@ PrefabInstance:
     - target: {fileID: 1807442510773908198, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: coinsText
       value: 
-      objectReference: {fileID: 1133761819}
+      objectReference: {fileID: 0}
     - target: {fileID: 6944299046475468449, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 101.21
@@ -5000,6 +5056,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1832821331}
     m_Modifications:
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (15)
@@ -5078,6 +5138,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1059942358}
     m_Modifications:
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -5300,6 +5364,10 @@ PrefabInstance:
       propertyPath: speed
       value: 1.84
       objectReference: {fileID: 0}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (43)
@@ -5731,6 +5799,10 @@ PrefabInstance:
       propertyPath: speed
       value: -0.85
       objectReference: {fileID: 0}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (44)
@@ -5936,6 +6008,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1832821331}
     m_Modifications:
     - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Color.b
       value: 1
       objectReference: {fileID: 0}
@@ -6013,6 +6089,10 @@ PrefabInstance:
       propertyPath: speed
       value: 0.86
       objectReference: {fileID: 0}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (10)
@@ -6094,7 +6174,7 @@ PrefabInstance:
     - target: {fileID: 1807442510773908198, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: coinsText
       value: 
-      objectReference: {fileID: 1133761819}
+      objectReference: {fileID: 0}
     - target: {fileID: 6944299046475468449, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 38.01
@@ -6157,6 +6237,10 @@ PrefabInstance:
       propertyPath: speed
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (20)
@@ -6226,7 +6310,7 @@ PrefabInstance:
     - target: {fileID: 1807442510773908198, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: coinsText
       value: 
-      objectReference: {fileID: 1133761819}
+      objectReference: {fileID: 0}
     - target: {fileID: 6944299046475468449, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 100.55
@@ -6422,7 +6506,7 @@ PrefabInstance:
     - target: {fileID: 1807442510773908198, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: coinsText
       value: 
-      objectReference: {fileID: 1133761819}
+      objectReference: {fileID: 0}
     - target: {fileID: 6944299046475468449, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.66
@@ -6943,6 +7027,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 770226129}
     m_Modifications:
     - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Color.b
       value: 1
       objectReference: {fileID: 0}
@@ -7433,6 +7521,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 770226129}
     m_Modifications:
     - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Color.b
       value: 1
       objectReference: {fileID: 0}
@@ -7640,6 +7732,10 @@ PrefabInstance:
       propertyPath: speed
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (5)
@@ -7954,7 +8050,7 @@ PrefabInstance:
     - target: {fileID: 1807442510773908198, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: coinsText
       value: 
-      objectReference: {fileID: 1133761819}
+      objectReference: {fileID: 0}
     - target: {fileID: 6944299046475468449, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 66.43
@@ -8021,6 +8117,10 @@ PrefabInstance:
       propertyPath: speed
       value: -2
       objectReference: {fileID: 0}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (48)
@@ -8098,7 +8198,7 @@ PrefabInstance:
     - target: {fileID: 1807442510773908198, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: coinsText
       value: 
-      objectReference: {fileID: 1133761819}
+      objectReference: {fileID: 0}
     - target: {fileID: 6944299046475468449, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 73.75
@@ -8783,6 +8883,10 @@ PrefabInstance:
       propertyPath: speed
       value: -2
       objectReference: {fileID: 0}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (47)
@@ -8862,6 +8966,10 @@ PrefabInstance:
       propertyPath: speed
       value: 0.34
       objectReference: {fileID: 0}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (2)
@@ -8947,7 +9055,7 @@ PrefabInstance:
     - target: {fileID: 1807442510773908198, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: coinsText
       value: 
-      objectReference: {fileID: 1133761819}
+      objectReference: {fileID: 0}
     - target: {fileID: 6944299046475468449, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 81.29
@@ -9013,7 +9121,7 @@ PrefabInstance:
     - target: {fileID: 1807442510773908198, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: coinsText
       value: 
-      objectReference: {fileID: 1133761819}
+      objectReference: {fileID: 0}
     - target: {fileID: 6944299046475468449, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 86.69
@@ -9639,6 +9747,26 @@ PrefabInstance:
       propertyPath: playerMovementPlayer
       value: 
       objectReference: {fileID: 1853047254}
+    - target: {fileID: 4137428509718776317, guid: 806ba4195340d904aaf13ff6d7933090, type: 3}
+      propertyPath: words.Array.data[134]
+      value: dog
+      objectReference: {fileID: 0}
+    - target: {fileID: 4137428509718776317, guid: 806ba4195340d904aaf13ff6d7933090, type: 3}
+      propertyPath: words.Array.data[135]
+      value: cat
+      objectReference: {fileID: 0}
+    - target: {fileID: 4137428509718776317, guid: 806ba4195340d904aaf13ff6d7933090, type: 3}
+      propertyPath: words.Array.data[138]
+      value: phone
+      objectReference: {fileID: 0}
+    - target: {fileID: 4137428509718776317, guid: 806ba4195340d904aaf13ff6d7933090, type: 3}
+      propertyPath: words.Array.data[139]
+      value: mat
+      objectReference: {fileID: 0}
+    - target: {fileID: 4137428509718776317, guid: 806ba4195340d904aaf13ff6d7933090, type: 3}
+      propertyPath: words.Array.data[140]
+      value: machine-123
+      objectReference: {fileID: 0}
     - target: {fileID: 5892537866368853168, guid: 806ba4195340d904aaf13ff6d7933090, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1
@@ -9696,6 +9824,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 770226129}
     m_Modifications:
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (28)
@@ -9770,6 +9902,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1832821331}
     m_Modifications:
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -9848,6 +9984,10 @@ PrefabInstance:
       propertyPath: speed
       value: -0.85
       objectReference: {fileID: 0}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (44)
@@ -9926,6 +10066,10 @@ PrefabInstance:
       propertyPath: speed
       value: -2
       objectReference: {fileID: 0}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (59)
@@ -10279,6 +10423,10 @@ PrefabInstance:
       propertyPath: speed
       value: 1.84
       objectReference: {fileID: 0}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (21)
@@ -10360,7 +10508,7 @@ PrefabInstance:
     - target: {fileID: 1807442510773908198, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: coinsText
       value: 
-      objectReference: {fileID: 1133761819}
+      objectReference: {fileID: 0}
     - target: {fileID: 6944299046475468449, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.16
@@ -10544,6 +10692,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1832821331}
     m_Modifications:
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -10742,6 +10894,10 @@ PrefabInstance:
       propertyPath: speed
       value: -2
       objectReference: {fileID: 0}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (16)
@@ -10839,6 +10995,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 770226129}
     m_Modifications:
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (31)
@@ -10921,6 +11081,10 @@ PrefabInstance:
       propertyPath: speed
       value: -2
       objectReference: {fileID: 0}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (57)
@@ -11074,6 +11238,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1059942358}
     m_Modifications:
     - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Color.b
       value: 1
       objectReference: {fileID: 0}
@@ -11151,6 +11319,10 @@ PrefabInstance:
       propertyPath: speed
       value: 1.84
       objectReference: {fileID: 0}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (21)
@@ -11232,7 +11404,7 @@ PrefabInstance:
     - target: {fileID: 1807442510773908198, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: coinsText
       value: 
-      objectReference: {fileID: 1133761819}
+      objectReference: {fileID: 0}
     - target: {fileID: 6944299046475468449, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 16.46
@@ -11423,7 +11595,7 @@ PrefabInstance:
     - target: {fileID: 1807442510773908198, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: coinsText
       value: 
-      objectReference: {fileID: 1133761819}
+      objectReference: {fileID: 0}
     - target: {fileID: 6944299046475468449, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 99.86
@@ -11482,6 +11654,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1832821331}
     m_Modifications:
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (28)
@@ -11687,6 +11863,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1059942358}
     m_Modifications:
     - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Color.b
       value: 1
       objectReference: {fileID: 0}
@@ -11838,6 +12018,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 770226129}
     m_Modifications:
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (4)
@@ -12003,7 +12187,7 @@ PrefabInstance:
     - target: {fileID: 1807442510773908198, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: coinsText
       value: 
-      objectReference: {fileID: 1133761819}
+      objectReference: {fileID: 0}
     - target: {fileID: 6944299046475468449, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 17.59
@@ -12148,6 +12332,10 @@ PrefabInstance:
       propertyPath: speed
       value: -2
       objectReference: {fileID: 0}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (16)
@@ -12570,7 +12758,7 @@ PrefabInstance:
     - target: {fileID: 1807442510773908198, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: coinsText
       value: 
-      objectReference: {fileID: 1133761819}
+      objectReference: {fileID: 0}
     - target: {fileID: 6944299046475468449, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 28.65
@@ -12794,6 +12982,10 @@ PrefabInstance:
       propertyPath: speed
       value: 1.84
       objectReference: {fileID: 0}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (43)
@@ -12872,6 +13064,10 @@ PrefabInstance:
       propertyPath: speed
       value: -0.85
       objectReference: {fileID: 0}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (22)
@@ -12950,6 +13146,10 @@ PrefabInstance:
       propertyPath: speed
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (5)
@@ -13451,7 +13651,7 @@ PrefabInstance:
     - target: {fileID: 1807442510773908198, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: coinsText
       value: 
-      objectReference: {fileID: 1133761819}
+      objectReference: {fileID: 0}
     - target: {fileID: 6944299046475468449, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 65.93
@@ -13518,6 +13718,10 @@ PrefabInstance:
       propertyPath: speed
       value: -0.85
       objectReference: {fileID: 0}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (45)
@@ -13813,7 +14017,7 @@ PrefabInstance:
     - target: {fileID: 1807442510773908198, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: coinsText
       value: 
-      objectReference: {fileID: 1133761819}
+      objectReference: {fileID: 0}
     - target: {fileID: 6944299046475468449, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 15.75
@@ -14032,6 +14236,10 @@ PrefabInstance:
       propertyPath: speed
       value: -2
       objectReference: {fileID: 0}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (8)
@@ -14258,7 +14466,7 @@ PrefabInstance:
     - target: {fileID: 1807442510773908198, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: coinsText
       value: 
-      objectReference: {fileID: 1133761819}
+      objectReference: {fileID: 0}
     - target: {fileID: 6944299046475468449, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 55.92
@@ -14506,7 +14714,7 @@ PrefabInstance:
     - target: {fileID: 1807442510773908198, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: coinsText
       value: 
-      objectReference: {fileID: 1133761819}
+      objectReference: {fileID: 0}
     - target: {fileID: 6944299046475468449, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.93
@@ -14651,7 +14859,7 @@ PrefabInstance:
     - target: {fileID: 1807442510773908198, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: coinsText
       value: 
-      objectReference: {fileID: 1133761819}
+      objectReference: {fileID: 0}
     - target: {fileID: 6944299046475468449, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 90.32
@@ -14841,6 +15049,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1832821331}
     m_Modifications:
     - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Color.b
       value: 1
       objectReference: {fileID: 0}
@@ -14915,6 +15127,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1059942358}
     m_Modifications:
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -14993,6 +15209,10 @@ PrefabInstance:
       propertyPath: speed
       value: -2
       objectReference: {fileID: 0}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -15087,7 +15307,7 @@ PrefabInstance:
     - target: {fileID: 1807442510773908198, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: coinsText
       value: 
-      objectReference: {fileID: 1133761819}
+      objectReference: {fileID: 0}
     - target: {fileID: 6944299046475468449, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 27.98
@@ -15196,6 +15416,10 @@ PrefabInstance:
       propertyPath: speed
       value: -2
       objectReference: {fileID: 0}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (58)
@@ -15278,7 +15502,7 @@ PrefabInstance:
     - target: {fileID: 1807442510773908198, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: coinsText
       value: 
-      objectReference: {fileID: 1133761819}
+      objectReference: {fileID: 0}
     - target: {fileID: 6944299046475468449, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 95.01
@@ -15699,6 +15923,10 @@ PrefabInstance:
       propertyPath: speed
       value: -0.85
       objectReference: {fileID: 0}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (54)
@@ -15773,6 +16001,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1059942358}
     m_Modifications:
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (13)
@@ -16461,6 +16693,10 @@ PrefabInstance:
       propertyPath: speed
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (41)
@@ -16707,7 +16943,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &695393665
 Transform:
   m_ObjectHideFlags: 0
@@ -16881,6 +17117,10 @@ PrefabInstance:
       propertyPath: speed
       value: -0.85
       objectReference: {fileID: 0}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (45)
@@ -17046,7 +17286,7 @@ PrefabInstance:
     - target: {fileID: 1807442510773908198, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: coinsText
       value: 
-      objectReference: {fileID: 1133761819}
+      objectReference: {fileID: 0}
     - target: {fileID: 6944299046475468449, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 80.67
@@ -17110,6 +17350,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1832821331}
     m_Modifications:
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (31)
@@ -17409,7 +17653,7 @@ PrefabInstance:
     - target: {fileID: 1807442510773908198, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: coinsText
       value: 
-      objectReference: {fileID: 1133761819}
+      objectReference: {fileID: 0}
     - target: {fileID: 6944299046475468449, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.34
@@ -17470,7 +17714,7 @@ PrefabInstance:
     - target: {fileID: 1807442510773908198, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: coinsText
       value: 
-      objectReference: {fileID: 1133761819}
+      objectReference: {fileID: 0}
     - target: {fileID: 6944299046475468449, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 58.67
@@ -17666,7 +17910,7 @@ PrefabInstance:
     - target: {fileID: 1807442510773908198, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: coinsText
       value: 
-      objectReference: {fileID: 1133761819}
+      objectReference: {fileID: 0}
     - target: {fileID: 6944299046475468449, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 84.3
@@ -17729,6 +17973,10 @@ PrefabInstance:
       propertyPath: speed
       value: -0.85
       objectReference: {fileID: 0}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (45)
@@ -17889,7 +18137,7 @@ PrefabInstance:
     - target: {fileID: 1807442510773908198, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: coinsText
       value: 
-      objectReference: {fileID: 1133761819}
+      objectReference: {fileID: 0}
     - target: {fileID: 6944299046475468449, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.91
@@ -17957,6 +18205,10 @@ PrefabInstance:
       propertyPath: speed
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (20)
@@ -18026,7 +18278,7 @@ PrefabInstance:
     - target: {fileID: 1807442510773908198, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: coinsText
       value: 
-      objectReference: {fileID: 1133761819}
+      objectReference: {fileID: 0}
     - target: {fileID: 6944299046475468449, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 94.47
@@ -18219,6 +18471,10 @@ PrefabInstance:
       propertyPath: speed
       value: -0.85
       objectReference: {fileID: 0}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (55)
@@ -18875,7 +19131,7 @@ PrefabInstance:
     - target: {fileID: 1807442510773908198, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: coinsText
       value: 
-      objectReference: {fileID: 1133761819}
+      objectReference: {fileID: 0}
     - target: {fileID: 6944299046475468449, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 87.87
@@ -18938,6 +19194,10 @@ PrefabInstance:
       propertyPath: speed
       value: 1.84
       objectReference: {fileID: 0}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (42)
@@ -19160,7 +19420,7 @@ PrefabInstance:
     - target: {fileID: 1807442510773908198, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: coinsText
       value: 
-      objectReference: {fileID: 1133761819}
+      objectReference: {fileID: 0}
     - target: {fileID: 6944299046475468449, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 84.74
@@ -19356,7 +19616,7 @@ PrefabInstance:
     - target: {fileID: 1807442510773908198, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: coinsText
       value: 
-      objectReference: {fileID: 1133761819}
+      objectReference: {fileID: 0}
     - target: {fileID: 6944299046475468449, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 20.469
@@ -19422,7 +19682,7 @@ PrefabInstance:
     - target: {fileID: 1807442510773908198, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: coinsText
       value: 
-      objectReference: {fileID: 1133761819}
+      objectReference: {fileID: 0}
     - target: {fileID: 6944299046475468449, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 52.97
@@ -19916,7 +20176,7 @@ PrefabInstance:
     - target: {fileID: 1807442510773908198, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: coinsText
       value: 
-      objectReference: {fileID: 1133761819}
+      objectReference: {fileID: 0}
     - target: {fileID: 6944299046475468449, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 57.96
@@ -20120,6 +20380,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1059942358}
     m_Modifications:
     - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Color.b
       value: 1
       objectReference: {fileID: 0}
@@ -20193,6 +20457,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1832821331}
     m_Modifications:
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (1)
@@ -20406,6 +20674,10 @@ PrefabInstance:
       value: 0.86
       objectReference: {fileID: 0}
     - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Color.b
       value: 1
       objectReference: {fileID: 0}
@@ -20491,6 +20763,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 770226129}
     m_Modifications:
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (13)
@@ -20653,6 +20929,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 770226129}
     m_Modifications:
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -21125,6 +21405,10 @@ PrefabInstance:
       value: 0.86
       objectReference: {fileID: 0}
     - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Color.b
       value: 1
       objectReference: {fileID: 0}
@@ -21217,7 +21501,7 @@ PrefabInstance:
     - target: {fileID: 1807442510773908198, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: coinsText
       value: 
-      objectReference: {fileID: 1133761819}
+      objectReference: {fileID: 0}
     - target: {fileID: 6944299046475468449, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 85.36
@@ -21276,6 +21560,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 770226129}
     m_Modifications:
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -21357,7 +21645,7 @@ PrefabInstance:
     - target: {fileID: 1807442510773908198, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: coinsText
       value: 
-      objectReference: {fileID: 1133761819}
+      objectReference: {fileID: 0}
     - target: {fileID: 6944299046475468449, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 59.45
@@ -21500,7 +21788,7 @@ PrefabInstance:
     - target: {fileID: 1807442510773908198, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: coinsText
       value: 
-      objectReference: {fileID: 1133761819}
+      objectReference: {fileID: 0}
     - target: {fileID: 6944299046475468449, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 14.09
@@ -21561,7 +21849,7 @@ PrefabInstance:
     - target: {fileID: 1807442510773908198, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: coinsText
       value: 
-      objectReference: {fileID: 1133761819}
+      objectReference: {fileID: 0}
     - target: {fileID: 6944299046475468449, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.7
@@ -21831,6 +22119,10 @@ PrefabInstance:
       propertyPath: speed
       value: 0.86
       objectReference: {fileID: 0}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (10)
@@ -21909,6 +22201,10 @@ PrefabInstance:
       propertyPath: speed
       value: -2
       objectReference: {fileID: 0}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (60)
@@ -21988,6 +22284,10 @@ PrefabInstance:
       propertyPath: speed
       value: -2
       objectReference: {fileID: 0}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -22082,7 +22382,7 @@ PrefabInstance:
     - target: {fileID: 1807442510773908198, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: coinsText
       value: 
-      objectReference: {fileID: 1133761819}
+      objectReference: {fileID: 0}
     - target: {fileID: 6944299046475468449, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 53.54
@@ -22275,6 +22575,10 @@ PrefabInstance:
       propertyPath: speed
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (40)
@@ -22336,6 +22640,10 @@ PrefabInstance:
       propertyPath: speed
       value: -2
       objectReference: {fileID: 0}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (60)
@@ -22579,6 +22887,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1059942358}
     m_Modifications:
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (15)
@@ -22669,7 +22981,7 @@ PrefabInstance:
     - target: {fileID: 1807442510773908198, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: coinsText
       value: 
-      objectReference: {fileID: 1133761819}
+      objectReference: {fileID: 0}
     - target: {fileID: 6944299046475468449, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 96.3
@@ -22732,6 +23044,10 @@ PrefabInstance:
       propertyPath: speed
       value: -0.85
       objectReference: {fileID: 0}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (53)
@@ -22900,6 +23216,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1832821331}
     m_Modifications:
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -23452,7 +23772,7 @@ PrefabInstance:
     - target: {fileID: 1807442510773908198, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: coinsText
       value: 
-      objectReference: {fileID: 1133761819}
+      objectReference: {fileID: 0}
     - target: {fileID: 6944299046475468449, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 60.63
@@ -23690,6 +24010,10 @@ PrefabInstance:
       propertyPath: speed
       value: -0.85
       objectReference: {fileID: 0}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (56)
@@ -23776,7 +24100,7 @@ PrefabInstance:
     - target: {fileID: 1807442510773908198, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: coinsText
       value: 
-      objectReference: {fileID: 1133761819}
+      objectReference: {fileID: 0}
     - target: {fileID: 6944299046475468449, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 90.92
@@ -23839,6 +24163,10 @@ PrefabInstance:
       propertyPath: speed
       value: -2
       objectReference: {fileID: 0}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -23930,6 +24258,10 @@ PrefabInstance:
       propertyPath: speed
       value: 0.86
       objectReference: {fileID: 0}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -24023,7 +24355,7 @@ PrefabInstance:
     - target: {fileID: 1807442510773908198, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: coinsText
       value: 
-      objectReference: {fileID: 1133761819}
+      objectReference: {fileID: 0}
     - target: {fileID: 6944299046475468449, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 56.65
@@ -24082,6 +24414,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1059942358}
     m_Modifications:
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -29740,6 +30076,10 @@ PrefabInstance:
       propertyPath: speed
       value: 0.34
       objectReference: {fileID: 0}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (33)
@@ -29825,7 +30165,7 @@ PrefabInstance:
     - target: {fileID: 1807442510773908198, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: coinsText
       value: 
-      objectReference: {fileID: 1133761819}
+      objectReference: {fileID: 0}
     - target: {fileID: 6944299046475468449, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 89.09
@@ -29888,6 +30228,10 @@ PrefabInstance:
       propertyPath: speed
       value: -2
       objectReference: {fileID: 0}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (23)
@@ -29970,7 +30314,7 @@ PrefabInstance:
     - target: {fileID: 1807442510773908198, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: coinsText
       value: 
-      objectReference: {fileID: 1133761819}
+      objectReference: {fileID: 0}
     - target: {fileID: 6944299046475468449, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 73.08
@@ -30037,6 +30381,10 @@ PrefabInstance:
       propertyPath: speed
       value: -2
       objectReference: {fileID: 0}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (46)
@@ -30200,6 +30548,10 @@ PrefabInstance:
       propertyPath: speed
       value: -0.85
       objectReference: {fileID: 0}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (7)
@@ -30650,6 +31002,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1832821331}
     m_Modifications:
     - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Color.b
       value: 1
       objectReference: {fileID: 0}
@@ -30727,6 +31083,10 @@ PrefabInstance:
       propertyPath: speed
       value: 1.84
       objectReference: {fileID: 0}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (52)
@@ -30805,6 +31165,10 @@ PrefabInstance:
       propertyPath: speed
       value: -0.85
       objectReference: {fileID: 0}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (54)
@@ -31028,6 +31392,10 @@ PrefabInstance:
       value: 0.86
       objectReference: {fileID: 0}
     - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Color.b
       value: 1
       objectReference: {fileID: 0}
@@ -31117,6 +31485,10 @@ PrefabInstance:
       propertyPath: speed
       value: 1.84
       objectReference: {fileID: 0}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (42)
@@ -31186,6 +31558,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 770226129}
     m_Modifications:
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -31406,7 +31782,7 @@ PrefabInstance:
     - target: {fileID: 1807442510773908198, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: coinsText
       value: 
-      objectReference: {fileID: 1133761819}
+      objectReference: {fileID: 0}
     - target: {fileID: 6944299046475468449, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 81.85
@@ -31645,6 +32021,10 @@ PrefabInstance:
       value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Color.b
       value: 1
       objectReference: {fileID: 0}
@@ -31810,6 +32190,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 7059185868551341777, guid: 04e381017e685b743848d497561db416, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8447487483527566338, guid: 04e381017e685b743848d497561db416, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -31819,17 +32203,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 04e381017e685b743848d497561db416, type: 3}
---- !u!114 &1133761819 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5801745952879553929, guid: 04e381017e685b743848d497561db416, type: 3}
-  m_PrefabInstance: {fileID: 1133761818}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1135119757
 GameObject:
   m_ObjectHideFlags: 0
@@ -31989,7 +32362,7 @@ PrefabInstance:
     - target: {fileID: 1807442510773908198, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: coinsText
       value: 
-      objectReference: {fileID: 1133761819}
+      objectReference: {fileID: 0}
     - target: {fileID: 6944299046475468449, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 54.69
@@ -32052,6 +32425,10 @@ PrefabInstance:
       propertyPath: speed
       value: -0.85
       objectReference: {fileID: 0}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (7)
@@ -32130,6 +32507,10 @@ PrefabInstance:
       propertyPath: speed
       value: -2
       objectReference: {fileID: 0}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (47)
@@ -32209,6 +32590,10 @@ PrefabInstance:
       propertyPath: speed
       value: -0.85
       objectReference: {fileID: 0}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (53)
@@ -32290,7 +32675,7 @@ PrefabInstance:
     - target: {fileID: 1807442510773908198, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: coinsText
       value: 
-      objectReference: {fileID: 1133761819}
+      objectReference: {fileID: 0}
     - target: {fileID: 6944299046475468449, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 37.33
@@ -32349,6 +32734,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 770226129}
     m_Modifications:
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (30)
@@ -32431,6 +32820,10 @@ PrefabInstance:
       propertyPath: speed
       value: -2
       objectReference: {fileID: 0}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (61)
@@ -32627,6 +33020,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: StartGame (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6605884721079749807, guid: 871fae6ee6638db429579600244d919c, type: 3}
+      propertyPath: m_Color.b
+      value: 0.6264151
+      objectReference: {fileID: 0}
+    - target: {fileID: 6605884721079749807, guid: 871fae6ee6638db429579600244d919c, type: 3}
+      propertyPath: m_Color.g
+      value: 0.7619012
+      objectReference: {fileID: 0}
+    - target: {fileID: 6605884721079749807, guid: 871fae6ee6638db429579600244d919c, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -32640,6 +33045,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1059942358}
     m_Modifications:
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -32757,7 +33166,7 @@ PrefabInstance:
     - target: {fileID: 1807442510773908198, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: coinsText
       value: 
-      objectReference: {fileID: 1133761819}
+      objectReference: {fileID: 0}
     - target: {fileID: 6944299046475468449, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 93.64
@@ -32820,6 +33229,10 @@ PrefabInstance:
       propertyPath: speed
       value: 1.84
       objectReference: {fileID: 0}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (6)
@@ -33450,7 +33863,7 @@ PrefabInstance:
     - target: {fileID: 1807442510773908198, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: coinsText
       value: 
-      objectReference: {fileID: 1133761819}
+      objectReference: {fileID: 0}
     - target: {fileID: 6944299046475468449, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 50.3
@@ -33683,6 +34096,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: StartGame
       objectReference: {fileID: 0}
+    - target: {fileID: 6605884721079749807, guid: 871fae6ee6638db429579600244d919c, type: 3}
+      propertyPath: m_Color.b
+      value: 0.6264151
+      objectReference: {fileID: 0}
+    - target: {fileID: 6605884721079749807, guid: 871fae6ee6638db429579600244d919c, type: 3}
+      propertyPath: m_Color.g
+      value: 0.7619012
+      objectReference: {fileID: 0}
+    - target: {fileID: 6605884721079749807, guid: 871fae6ee6638db429579600244d919c, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -33700,6 +34125,10 @@ PrefabInstance:
       propertyPath: speed
       value: -0.85
       objectReference: {fileID: 0}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (22)
@@ -33922,6 +34351,10 @@ PrefabInstance:
       propertyPath: speed
       value: -2
       objectReference: {fileID: 0}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (23)
@@ -34142,6 +34575,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1059942358}
     m_Modifications:
     - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Color.b
       value: 1
       objectReference: {fileID: 0}
@@ -34219,6 +34656,10 @@ PrefabInstance:
       propertyPath: speed
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (5)
@@ -34548,7 +34989,7 @@ PrefabInstance:
     - target: {fileID: 1807442510773908198, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: coinsText
       value: 
-      objectReference: {fileID: 1133761819}
+      objectReference: {fileID: 0}
     - target: {fileID: 6944299046475468449, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 101.83
@@ -34614,7 +35055,7 @@ PrefabInstance:
     - target: {fileID: 1807442510773908198, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: coinsText
       value: 
-      objectReference: {fileID: 1133761819}
+      objectReference: {fileID: 0}
     - target: {fileID: 6944299046475468449, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 88.47
@@ -35022,6 +35463,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 770226129}
     m_Modifications:
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (14)
@@ -35104,6 +35549,10 @@ PrefabInstance:
       propertyPath: speed
       value: -2
       objectReference: {fileID: 0}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (8)
@@ -35179,6 +35628,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1059942358}
     m_Modifications:
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -35863,7 +36316,7 @@ PrefabInstance:
     - target: {fileID: 1807442510773908198, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: coinsText
       value: 
-      objectReference: {fileID: 1133761819}
+      objectReference: {fileID: 0}
     - target: {fileID: 6944299046475468449, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 54.17
@@ -36071,6 +36524,10 @@ PrefabInstance:
       value: 0.86
       objectReference: {fileID: 0}
     - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Color.b
       value: 1
       objectReference: {fileID: 0}
@@ -36162,6 +36619,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1832821331}
     m_Modifications:
     - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Color.b
       value: 1
       objectReference: {fileID: 0}
@@ -36235,6 +36696,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 770226129}
     m_Modifications:
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (29)
@@ -36401,6 +36866,10 @@ PrefabInstance:
       propertyPath: speed
       value: -2
       objectReference: {fileID: 0}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (48)
@@ -36476,6 +36945,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1059942358}
     m_Modifications:
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (32)
@@ -41525,6 +41998,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1059942358}
     m_Modifications:
     - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Color.b
       value: 1
       objectReference: {fileID: 0}
@@ -41598,6 +42075,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1059942358}
     m_Modifications:
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (30)
@@ -41933,6 +42414,10 @@ PrefabInstance:
       propertyPath: speed
       value: -2
       objectReference: {fileID: 0}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (47)
@@ -42426,6 +42911,10 @@ PrefabInstance:
       value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Color.b
       value: 1
       objectReference: {fileID: 0}
@@ -42512,6 +43001,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1059942358}
     m_Modifications:
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (29)
@@ -42878,6 +43371,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1059942358}
     m_Modifications:
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (31)
@@ -42971,6 +43468,10 @@ PrefabInstance:
       propertyPath: speed
       value: 0.86
       objectReference: {fileID: 0}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (10)
@@ -43051,6 +43552,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1832821331}
     m_Modifications:
     - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Color.b
       value: 1
       objectReference: {fileID: 0}
@@ -43124,6 +43629,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 770226129}
     m_Modifications:
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -43202,6 +43711,10 @@ PrefabInstance:
       propertyPath: speed
       value: 0.86
       objectReference: {fileID: 0}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (25)
@@ -43280,6 +43793,10 @@ PrefabInstance:
       propertyPath: speed
       value: 0.86
       objectReference: {fileID: 0}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (25)
@@ -43630,7 +44147,7 @@ PrefabInstance:
     - target: {fileID: 1807442510773908198, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: coinsText
       value: 
-      objectReference: {fileID: 1133761819}
+      objectReference: {fileID: 0}
     - target: {fileID: 6944299046475468449, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 67
@@ -43693,6 +44210,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1832821331}
     m_Modifications:
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (4)
@@ -43768,6 +44289,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 770226129}
     m_Modifications:
     - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Color.b
       value: 1
       objectReference: {fileID: 0}
@@ -43840,6 +44365,10 @@ PrefabInstance:
       propertyPath: speed
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (41)
@@ -44039,7 +44568,7 @@ PrefabInstance:
     - target: {fileID: 1807442510773908198, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: coinsText
       value: 
-      objectReference: {fileID: 1133761819}
+      objectReference: {fileID: 0}
     - target: {fileID: 6944299046475468449, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 92.33
@@ -44098,6 +44627,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1832821331}
     m_Modifications:
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -44514,6 +45047,10 @@ PrefabInstance:
       propertyPath: speed
       value: -0.85
       objectReference: {fileID: 0}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (55)
@@ -44600,7 +45137,7 @@ PrefabInstance:
     - target: {fileID: 1807442510773908198, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: coinsText
       value: 
-      objectReference: {fileID: 1133761819}
+      objectReference: {fileID: 0}
     - target: {fileID: 6944299046475468449, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 98.47
@@ -44663,6 +45200,10 @@ PrefabInstance:
       propertyPath: speed
       value: -2
       objectReference: {fileID: 0}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (58)
@@ -44952,7 +45493,7 @@ PrefabInstance:
     - target: {fileID: 1807442510773908198, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: coinsText
       value: 
-      objectReference: {fileID: 1133761819}
+      objectReference: {fileID: 0}
     - target: {fileID: 6944299046475468449, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 87.27
@@ -45095,7 +45636,7 @@ PrefabInstance:
     - target: {fileID: 1807442510773908198, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: coinsText
       value: 
-      objectReference: {fileID: 1133761819}
+      objectReference: {fileID: 0}
     - target: {fileID: 6944299046475468449, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 27.98
@@ -45288,6 +45829,10 @@ PrefabInstance:
       propertyPath: speed
       value: 1.84
       objectReference: {fileID: 0}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (21)
@@ -45369,7 +45914,7 @@ PrefabInstance:
     - target: {fileID: 1807442510773908198, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: coinsText
       value: 
-      objectReference: {fileID: 1133761819}
+      objectReference: {fileID: 0}
     - target: {fileID: 6944299046475468449, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 97.74
@@ -45466,7 +46011,7 @@ PrefabInstance:
     - target: {fileID: 1807442510773908198, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: coinsText
       value: 
-      objectReference: {fileID: 1133761819}
+      objectReference: {fileID: 0}
     - target: {fileID: 6944299046475468449, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 89.84
@@ -45529,6 +46074,10 @@ PrefabInstance:
       propertyPath: speed
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (41)
@@ -45819,7 +46368,7 @@ PrefabInstance:
     - target: {fileID: 1807442510773908198, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: coinsText
       value: 
-      objectReference: {fileID: 1133761819}
+      objectReference: {fileID: 0}
     - target: {fileID: 6944299046475468449, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 83.66
@@ -46091,7 +46640,7 @@ PrefabInstance:
     - target: {fileID: 1807442510773908198, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: coinsText
       value: 
-      objectReference: {fileID: 1133761819}
+      objectReference: {fileID: 0}
     - target: {fileID: 6944299046475468449, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 52.35
@@ -46385,7 +46934,7 @@ PrefabInstance:
     - target: {fileID: 1807442510773908198, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: coinsText
       value: 
-      objectReference: {fileID: 1133761819}
+      objectReference: {fileID: 0}
     - target: {fileID: 6944299046475468449, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 19.717
@@ -46575,6 +47124,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 770226129}
     m_Modifications:
     - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Color.b
       value: 1
       objectReference: {fileID: 0}
@@ -46650,7 +47203,7 @@ PrefabInstance:
     - target: {fileID: 1807442510773908198, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: coinsText
       value: 
-      objectReference: {fileID: 1133761819}
+      objectReference: {fileID: 0}
     - target: {fileID: 6944299046475468449, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 61.15
@@ -47050,6 +47603,10 @@ PrefabInstance:
       propertyPath: speed
       value: -2
       objectReference: {fileID: 0}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (24)
@@ -47154,7 +47711,7 @@ PrefabInstance:
     - target: {fileID: 1807442510773908198, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: coinsText
       value: 
-      objectReference: {fileID: 1133761819}
+      objectReference: {fileID: 0}
     - target: {fileID: 6944299046475468449, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 82.97
@@ -47484,6 +48041,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1832821331}
     m_Modifications:
     - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Color.b
       value: 1
       objectReference: {fileID: 0}
@@ -47775,6 +48336,10 @@ PrefabInstance:
       propertyPath: speed
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (40)
@@ -47844,7 +48409,7 @@ PrefabInstance:
     - target: {fileID: 1807442510773908198, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: coinsText
       value: 
-      objectReference: {fileID: 1133761819}
+      objectReference: {fileID: 0}
     - target: {fileID: 6944299046475468449, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 95.64
@@ -47941,7 +48506,7 @@ PrefabInstance:
     - target: {fileID: 1807442510773908198, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: coinsText
       value: 
-      objectReference: {fileID: 1133761819}
+      objectReference: {fileID: 0}
     - target: {fileID: 6944299046475468449, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 49.69
@@ -48002,7 +48567,7 @@ PrefabInstance:
     - target: {fileID: 1807442510773908198, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: coinsText
       value: 
-      objectReference: {fileID: 1133761819}
+      objectReference: {fileID: 0}
     - target: {fileID: 6944299046475468449, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 50.96
@@ -48068,7 +48633,7 @@ PrefabInstance:
     - target: {fileID: 1807442510773908198, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: coinsText
       value: 
-      objectReference: {fileID: 1133761819}
+      objectReference: {fileID: 0}
     - target: {fileID: 6944299046475468449, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 62.13
@@ -48131,6 +48696,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1059942358}
     m_Modifications:
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -48336,6 +48905,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1059942358}
     m_Modifications:
     - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Color.b
       value: 1
       objectReference: {fileID: 0}
@@ -48409,6 +48982,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1059942358}
     m_Modifications:
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (28)
@@ -48490,7 +49067,7 @@ PrefabInstance:
     - target: {fileID: 1807442510773908198, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: coinsText
       value: 
-      objectReference: {fileID: 1133761819}
+      objectReference: {fileID: 0}
     - target: {fileID: 6944299046475468449, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 65.31
@@ -48834,7 +49411,7 @@ PrefabInstance:
     - target: {fileID: 1807442510773908198, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: coinsText
       value: 
-      objectReference: {fileID: 1133761819}
+      objectReference: {fileID: 0}
     - target: {fileID: 6944299046475468449, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 72.33
@@ -48904,7 +49481,7 @@ PrefabInstance:
     - target: {fileID: 1807442510773908198, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: coinsText
       value: 
-      objectReference: {fileID: 1133761819}
+      objectReference: {fileID: 0}
     - target: {fileID: 6944299046475468449, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 30.06
@@ -48963,6 +49540,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 770226129}
     m_Modifications:
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (1)
@@ -49085,6 +49666,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: StartGame (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6605884721079749807, guid: 871fae6ee6638db429579600244d919c, type: 3}
+      propertyPath: m_Color.b
+      value: 0.6264151
+      objectReference: {fileID: 0}
+    - target: {fileID: 6605884721079749807, guid: 871fae6ee6638db429579600244d919c, type: 3}
+      propertyPath: m_Color.g
+      value: 0.7619012
+      objectReference: {fileID: 0}
+    - target: {fileID: 6605884721079749807, guid: 871fae6ee6638db429579600244d919c, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -49141,7 +49734,7 @@ PrefabInstance:
     - target: {fileID: 1807442510773908198, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: coinsText
       value: 
-      objectReference: {fileID: 1133761819}
+      objectReference: {fileID: 0}
     - target: {fileID: 6944299046475468449, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 36.2
@@ -49207,7 +49800,7 @@ PrefabInstance:
     - target: {fileID: 1807442510773908198, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: coinsText
       value: 
-      objectReference: {fileID: 1133761819}
+      objectReference: {fileID: 0}
     - target: {fileID: 6944299046475468449, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 99.2
@@ -54363,6 +54956,10 @@ PrefabInstance:
       propertyPath: speed
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (40)
@@ -54425,6 +55022,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1832821331}
     m_Modifications:
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -54499,6 +55100,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1832821331}
     m_Modifications:
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -54577,6 +55182,10 @@ PrefabInstance:
       propertyPath: speed
       value: 0.34
       objectReference: {fileID: 0}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (2)
@@ -54654,6 +55263,10 @@ PrefabInstance:
       propertyPath: speed
       value: -2
       objectReference: {fileID: 0}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (24)
@@ -54959,6 +55572,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 770226129}
     m_Modifications:
     - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Color.b
       value: 1
       objectReference: {fileID: 0}
@@ -55027,6 +55644,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1059942358}
     m_Modifications:
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -55101,6 +55722,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1832821331}
     m_Modifications:
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (29)
@@ -55412,6 +56037,10 @@ PrefabInstance:
       propertyPath: speed
       value: -2
       objectReference: {fileID: 0}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (48)
@@ -55494,7 +56123,7 @@ PrefabInstance:
     - target: {fileID: 1807442510773908198, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: coinsText
       value: 
-      objectReference: {fileID: 1133761819}
+      objectReference: {fileID: 0}
     - target: {fileID: 6944299046475468449, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 92.98
@@ -55687,6 +56316,10 @@ PrefabInstance:
       propertyPath: speed
       value: -2
       objectReference: {fileID: 0}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (46)
@@ -55919,6 +56552,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 770226129}
     m_Modifications:
     - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Color.b
       value: 1
       objectReference: {fileID: 0}
@@ -56069,6 +56706,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1059942358}
     m_Modifications:
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (1)
@@ -56147,6 +56788,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1059942358}
     m_Modifications:
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (14)
@@ -56532,6 +57177,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1832821331}
     m_Modifications:
     - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Color.b
       value: 1
       objectReference: {fileID: 0}
@@ -56826,7 +57475,7 @@ PrefabInstance:
     - target: {fileID: 1807442510773908198, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: coinsText
       value: 
-      objectReference: {fileID: 1133761819}
+      objectReference: {fileID: 0}
     - target: {fileID: 6944299046475468449, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 79.38
@@ -57019,6 +57668,10 @@ PrefabInstance:
       propertyPath: speed
       value: -2
       objectReference: {fileID: 0}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (61)
@@ -57098,6 +57751,10 @@ PrefabInstance:
       propertyPath: speed
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (20)
@@ -57260,7 +57917,7 @@ PrefabInstance:
     - target: {fileID: 1807442510773908198, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: coinsText
       value: 
-      objectReference: {fileID: 1133761819}
+      objectReference: {fileID: 0}
     - target: {fileID: 6944299046475468449, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 18.955
@@ -57558,6 +58215,10 @@ PrefabInstance:
       propertyPath: speed
       value: -2
       objectReference: {fileID: 0}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (59)
@@ -57637,6 +58298,10 @@ PrefabInstance:
       propertyPath: speed
       value: 0.34
       objectReference: {fileID: 0}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (33)
@@ -57722,7 +58387,7 @@ PrefabInstance:
     - target: {fileID: 1807442510773908198, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: coinsText
       value: 
-      objectReference: {fileID: 1133761819}
+      objectReference: {fileID: 0}
     - target: {fileID: 6944299046475468449, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 70.72
@@ -58103,6 +58768,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 770226129}
     m_Modifications:
     - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Color.b
       value: 1
       objectReference: {fileID: 0}
@@ -58301,6 +58970,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1832821331}
     m_Modifications:
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (30)
@@ -58422,7 +59095,6 @@ Transform:
   - {fileID: 1817830451}
   - {fileID: 187171076}
   - {fileID: 80711809}
-  - {fileID: 2068607258}
   m_Father: {fileID: 33573916}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1899567590
@@ -58440,7 +59112,7 @@ PrefabInstance:
     - target: {fileID: 1807442510773908198, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: coinsText
       value: 
-      objectReference: {fileID: 1133761819}
+      objectReference: {fileID: 0}
     - target: {fileID: 6944299046475468449, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 14.98
@@ -58813,6 +59485,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 770226129}
     m_Modifications:
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -59266,7 +59942,7 @@ PrefabInstance:
     - target: {fileID: 1807442510773908198, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: coinsText
       value: 
-      objectReference: {fileID: 1133761819}
+      objectReference: {fileID: 0}
     - target: {fileID: 6944299046475468449, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 18.26
@@ -59556,7 +60232,7 @@ PrefabInstance:
     - target: {fileID: 1807442510773908198, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: coinsText
       value: 
-      objectReference: {fileID: 1133761819}
+      objectReference: {fileID: 0}
     - target: {fileID: 6944299046475468449, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 17.08
@@ -59615,6 +60291,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1832821331}
     m_Modifications:
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -59690,6 +60370,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 770226129}
     m_Modifications:
     - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Color.b
       value: 1
       objectReference: {fileID: 0}
@@ -59762,6 +60446,10 @@ PrefabInstance:
       propertyPath: speed
       value: -0.85
       objectReference: {fileID: 0}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (22)
@@ -59840,6 +60528,10 @@ PrefabInstance:
       propertyPath: speed
       value: 0.86
       objectReference: {fileID: 0}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -59933,7 +60625,7 @@ PrefabInstance:
     - target: {fileID: 1807442510773908198, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: coinsText
       value: 
-      objectReference: {fileID: 1133761819}
+      objectReference: {fileID: 0}
     - target: {fileID: 6944299046475468449, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 29.39
@@ -60462,6 +61154,10 @@ PrefabInstance:
       propertyPath: speed
       value: -0.85
       objectReference: {fileID: 0}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (7)
@@ -60684,6 +61380,10 @@ PrefabInstance:
       propertyPath: speed
       value: 0.34
       objectReference: {fileID: 0}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (2)
@@ -61098,7 +61798,7 @@ PrefabInstance:
     - target: {fileID: 1807442510773908198, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: coinsText
       value: 
-      objectReference: {fileID: 1133761819}
+      objectReference: {fileID: 0}
     - target: {fileID: 6944299046475468449, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 27.28
@@ -61161,6 +61861,10 @@ PrefabInstance:
       propertyPath: speed
       value: 1.84
       objectReference: {fileID: 0}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (6)
@@ -61372,7 +62076,7 @@ PrefabInstance:
     - target: {fileID: 1807442510773908198, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: coinsText
       value: 
-      objectReference: {fileID: 1133761819}
+      objectReference: {fileID: 0}
     - target: {fileID: 6944299046475468449, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 86.05
@@ -61431,6 +62135,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1059942358}
     m_Modifications:
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -61554,7 +62262,7 @@ PrefabInstance:
     - target: {fileID: 1807442510773908198, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: coinsText
       value: 
-      objectReference: {fileID: 1133761819}
+      objectReference: {fileID: 0}
     - target: {fileID: 6944299046475468449, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 60.05
@@ -61617,6 +62325,10 @@ PrefabInstance:
       propertyPath: speed
       value: -2
       objectReference: {fileID: 0}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (16)
@@ -61915,6 +62627,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1832821331}
     m_Modifications:
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (14)
@@ -62002,6 +62718,10 @@ PrefabInstance:
       propertyPath: speed
       value: -2
       objectReference: {fileID: 0}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (8)
@@ -62081,6 +62801,10 @@ PrefabInstance:
       propertyPath: speed
       value: -2
       objectReference: {fileID: 0}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (57)
@@ -62156,6 +62880,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1832821331}
     m_Modifications:
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (13)
@@ -62433,90 +63161,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.857528, y: 2.5001414}
   m_EdgeRadius: 0
---- !u!1 &2068607257
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2068607258}
-  - component: {fileID: 2068607259}
-  m_Layer: 0
-  m_Name: CityNew
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2068607258
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2068607257}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 142.82, y: -4.17, z: -0.039806947}
-  m_LocalScale: {x: 2.13, y: 2.13, z: 2.13}
-  m_ConstrainProportionsScale: 1
-  m_Children: []
-  m_Father: {fileID: 1893209208}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &2068607259
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2068607257}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: -1
-  m_Sprite: {fileID: 21300000, guid: 6230c78b4dc319744b0c5ee2d52db992, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 9.2, y: 5.89}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!1 &2072960064
 GameObject:
   m_ObjectHideFlags: 0
@@ -62808,6 +63452,10 @@ PrefabInstance:
       propertyPath: speed
       value: -2
       objectReference: {fileID: 0}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (24)
@@ -63358,6 +64006,10 @@ PrefabInstance:
       propertyPath: speed
       value: -2
       objectReference: {fileID: 0}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (23)
@@ -63511,6 +64163,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1059942358}
     m_Modifications:
     - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Color.b
       value: 1
       objectReference: {fileID: 0}
@@ -63591,7 +64247,7 @@ PrefabInstance:
     - target: {fileID: 1807442510773908198, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: coinsText
       value: 
-      objectReference: {fileID: 1133761819}
+      objectReference: {fileID: 0}
     - target: {fileID: 6944299046475468449, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 57.33
@@ -63657,7 +64313,7 @@ PrefabInstance:
     - target: {fileID: 1807442510773908198, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: coinsText
       value: 
-      objectReference: {fileID: 1133761819}
+      objectReference: {fileID: 0}
     - target: {fileID: 6944299046475468449, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 79.94
@@ -63994,6 +64650,10 @@ PrefabInstance:
       propertyPath: speed
       value: -2
       objectReference: {fileID: 0}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (46)
@@ -64220,7 +64880,7 @@ PrefabInstance:
     - target: {fileID: 1807442510773908198, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: coinsText
       value: 
-      objectReference: {fileID: 1133761819}
+      objectReference: {fileID: 0}
     - target: {fileID: 6944299046475468449, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 26.58
@@ -64367,6 +65027,10 @@ PrefabInstance:
       propertyPath: speed
       value: 1.84
       objectReference: {fileID: 0}
+    - target: {fileID: 2228737963298357595, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34738266a6de394391d61e5bdb049f9, type: 3}
     - target: {fileID: 3089325797507293055, guid: b7bb824de2320be42a74c76bafe525d6, type: 3}
       propertyPath: m_Name
       value: Cloud (43)
@@ -64722,7 +65386,7 @@ PrefabInstance:
     - target: {fileID: 1807442510773908198, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: coinsText
       value: 
-      objectReference: {fileID: 1133761819}
+      objectReference: {fileID: 0}
     - target: {fileID: 6944299046475468449, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 36.77
@@ -64872,7 +65536,7 @@ PrefabInstance:
     - target: {fileID: 1807442510773908198, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: coinsText
       value: 
-      objectReference: {fileID: 1133761819}
+      objectReference: {fileID: 0}
     - target: {fileID: 6944299046475468449, guid: 376e245e2751d06459c05c2ad160c97e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 67.36
