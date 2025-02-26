@@ -23,7 +23,7 @@ public class WordGenerator : MonoBehaviour
         "wish", "develop", "sweetheart", "humanity", "cracker", "water", "priority", "space", "economics", "theory", "timetable",
         "insert", "dates", "cloud", "physicist", "tutor", "oral", "at", "whenever", "wherever"};
 
-
+   
     public string GetRandomWord()
     {
         int RandomNumber = Random.Range(0, words.Length);

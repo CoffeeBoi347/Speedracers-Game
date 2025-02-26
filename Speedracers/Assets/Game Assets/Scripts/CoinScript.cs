@@ -13,14 +13,14 @@ public class CoinScript : MonoBehaviour
 
     private void Start()
     {
-        coinsText.text = coins.ToString();
+   //     coinsText.text = coins.ToString();
 
         blast.Stop();
     }
     void Update()
     {
         Debug.Log(coins);
-        coinsText.text = coins.ToString();
+    //    coinsText.text = coins.ToString();
         transform.Rotate(0f, speed, 0f);
     }
 

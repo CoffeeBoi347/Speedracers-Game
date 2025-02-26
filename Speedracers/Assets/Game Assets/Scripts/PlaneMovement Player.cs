@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -20,6 +19,7 @@ public class PlaneMovementPlayer : MonoBehaviour
     public ParticleSystem blastStart;
     public bool CollidedWithPPowerFX = false;
     public ParticleSystem Explosion;
+    public bool endCollide = false;
     void Start()
     {
         coinSc = FindObjectOfType<CoinScript>();
@@ -50,9 +50,9 @@ public class PlaneMovementPlayer : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        wordManager.AllowToAdd = false;
-        if (collision.gameObject.tag == "Ground" || collision.gameObject.tag == "Pipe" || collision.gameObject.tag == "Building" || collision.gameObject.tag == "Road")
+        if (collision.gameObject.tag == "Ground" || collision.gameObject.tag == "Pipe" || collision.gameObject.tag == "Obstacle" || collision.gameObject.tag == "Building" || collision.gameObject.tag == "Road")
         {
+            wordManager.AllowToAdd = false;
             Explosion.gameObject.SetActive(true);
             Explosion.Play();
             HasCollided = true;
@@ -61,39 +61,56 @@ public class PlaneMovementPlayer : MonoBehaviour
 
         }
 
-        if(collision.gameObject.tag == "Pipe")
+        if(collision.gameObject.tag == "BossFight")
         {
-            CollidedWithPipe = true;
+            GameObject wordManagerObj = GameObject.FindObjectOfType<WordManager>()?.gameObject;
+            wordManagerObj.SetActive(false);
+
+            GameObject bossWordManagerObj = GameObject.FindObjectOfType<BossFightWordGenerator>()?.gameObject;
+            bossWordManagerObj.SetActive(true);
         }
 
-        if(collision.gameObject.tag == "Boundary")
+        if (collision.gameObject.CompareTag("Pipe"))
         {
+                wordManager.AllowToAdd = false;
+
+                CollidedWithPipe = true;
+        }
+
+        if(collision.gameObject.CompareTag("Boundary"))
+        {
+            wordManager.AllowToAdd = false;
+
             CollidedBoundary = true;
         }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.tag == "Start")
+        if(collision.gameObject.CompareTag("Start"))
         {
             blastStart.Play();
         }
 
-        if(collision.gameObject.tag == "Coin")
+        if(collision.gameObject.CompareTag("Coin"))
         {
             coinSc.coins += 1;
         }
-        if(collision.gameObject.tag == "PowerUpBoost")
+        if(collision.gameObject.CompareTag("PowerUpBoost"))
         {
             Debug.Log("Nice");
             rb.AddForce(new Vector2(speed * 35f, speed * 35f));
             CollidedWithPPowerFX = true;
+        }
+        if(collision.gameObject.CompareTag("EndPoint"))
+        {
+            endCollide = true;
         }
     }
 
     private IEnumerator ReloadScene(float time)
     {
         yield return new WaitForSeconds(time);
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(sceneIndex);
     }
 }

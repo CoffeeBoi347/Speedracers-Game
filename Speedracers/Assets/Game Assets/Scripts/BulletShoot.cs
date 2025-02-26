@@ -25,6 +25,16 @@ public class BulletShoot : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        if (collision.gameObject.CompareTag("BossEnemyOne"))
+        {
+            BossEnemy bossEnemy = collision.gameObject.GetComponent<BossEnemy>();
+            if (bossEnemy != null)
+            {
+                bossEnemy.state = EnemyState.TakeHit;
+                bossEnemy.TakeDamage(20);
+                Debug.Log("HELL NAH");
+            }
+        }
         Rigidbody2D rb = collision.gameObject.GetComponent<Rigidbody2D>();
         if (rb != null)
         {

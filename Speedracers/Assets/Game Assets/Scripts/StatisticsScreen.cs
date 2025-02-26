@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
@@ -16,6 +14,7 @@ public class StatisticsScreen : MonoBehaviour
     public TextMeshProUGUI WPMtext;
     public TextMeshProUGUI TimeSurvivedText;
     public TextMeshProUGUI RatingText;
+    public TMP_Text headerTxt;
     void Start()
     {
         player = FindObjectOfType<PlaneMovementPlayer>();
@@ -32,7 +31,6 @@ public class StatisticsScreen : MonoBehaviour
     {
         UpdateValues();
     }
-    // Update is called once per frame
     void Update()
     {
         if (player.HasCollided == true && player.AllowedToJump == false || player.CollidedWithPipe == true || player.CollidedBoundary == true)
@@ -40,6 +38,17 @@ public class StatisticsScreen : MonoBehaviour
             float Distance = Vector3.Distance(transform.position, NewPosition.transform.position);
 
             if(Distance >= 0.1f)
+            {
+                transform.position = Vector3.MoveTowards(transform.position, NewPosition.transform.position, speed);
+            }
+        }
+
+        if (player.endCollide)
+        {
+            headerTxt.text = "LEVEL COMPLETED".ToString();
+            float Distance = Vector3.Distance(transform.position, NewPosition.transform.position);
+
+            if (Distance >= 0.1f)
             {
                 transform.position = Vector3.MoveTowards(transform.position, NewPosition.transform.position, speed);
             }

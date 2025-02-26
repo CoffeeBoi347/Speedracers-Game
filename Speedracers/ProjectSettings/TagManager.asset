@@ -16,6 +16,10 @@ TagManager:
   - PowerUpBoost
   - Station
   - Building
+  - EndPoint
+  - Obstacle
+  - BossEnemyOne
+  - Circle
   layers:
   - Default
   - TransparentFX

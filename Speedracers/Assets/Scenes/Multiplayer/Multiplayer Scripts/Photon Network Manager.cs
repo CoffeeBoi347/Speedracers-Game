@@ -19,6 +19,7 @@ public class PhotonNetworkManager : MonoBehaviourPunCallbacks
     [SerializeField] private Button playerStatus;
     private string roomName;
     [SerializeField] private TextMeshProUGUI roomErrorMessage;
+    [SerializeField] TMP_InputField roomInputField;
     private string time;
 
     ExitGames.Client.Photon.Hashtable testing;
@@ -52,8 +53,9 @@ public class PhotonNetworkManager : MonoBehaviourPunCallbacks
     public override void OnJoinedLobby()
     {
         base.OnJoinedLobby();
-        Debug.Log("Joined Lobby ");
+        Debug.Log("Joined Lobby Successfully!");
     }
+
 
     public override void OnConnectedToMaster()
     {
@@ -91,7 +93,11 @@ public class PhotonNetworkManager : MonoBehaviourPunCallbacks
     public void CreateRoom(string name, RoomOptions roomOptions)
     {
         PhotonNetwork.CreateRoom(name, roomOptions);
+        roomOptions.IsVisible = true;
+        roomOptions.IsOpen = true;
         Debug.Log($"Creating Room: {name}");
+        roomName = roomInputField.text;
+
     }
 
     public override void OnCreatedRoom()
@@ -107,13 +113,15 @@ public class PhotonNetworkManager : MonoBehaviourPunCallbacks
     {
         base.OnPlayerEnteredRoom(newPlayer);
         Debug.Log($"Current Nickname: {PhotonNetwork.NickName} -> OnPlayerEnteredRoom()");
-
+        UpdatePlayerList();
         Debug.Log(newPlayer.NickName);
         Instantiate(playerInfo_, playerInfoParent.transform);
 
         var _playerInfo = Instantiate(playerInfo_, playerInfoParent.transform);
         _playerInfo.playerName.text = newPlayer.NickName;
     }
+
+
 
     public override void OnJoinedRoom()
     {
@@ -177,6 +185,12 @@ public class PhotonNetworkManager : MonoBehaviourPunCallbacks
         Debug.LogError($"Failed to create room. Code: {returnCode}, Message: {message}");
     }
 
+    public override void OnLeftRoom()
+    {
+        base.OnLeftRoom();
+        Debug.Log("Left Room, Returning to Lobby...");
+    }
+
     public override void OnJoinRoomFailed(short returnCode, string message)
     {
         base.OnJoinRoomFailed(returnCode, message);
@@ -194,84 +208,53 @@ public class PhotonNetworkManager : MonoBehaviourPunCallbacks
         PhotonNetwork.JoinRoom(name);
     }
 
-    private IEnumerator AddBots(int botCount, float delay)
-    {
-        for (int i = 0; i < botCount; i++)
-        {
-            yield return new WaitForSeconds(delay);
-            string botName = "Bot" + UnityEngine.Random.Range(1000, 9999);
-            var botInfo = Instantiate(playerInfo_, playerInfoParent.transform);
-            botInfo.playerName.text = botName;
-        }
-    }
-
     public override void OnRoomListUpdate(List<RoomInfo> roomList)
     {
         base.OnRoomListUpdate(roomList);
-        Debug.Log("OnRoomListUpdate");
-        Debug.Log($"{roomList.Count} roomListCount");
+        Debug.Log($"OnRoomListUpdate called. {roomList.Count} rooms found.");
+        RefreshRoomList();
 
         foreach (var i in roomList)
         {
-            Instantiate(roomListPrefab, roomListParent);
-            var roomListScriptComponent = roomListPrefab.GetComponent<RoomName>();
+            if (i.RemovedFromList)
+                continue;
 
-            Debug.Log("Room instantiated!!! OnRoomListUpdate");
-            roomListScriptComponent.roomName.text = i.Name.ToString();
-            roomListScriptComponent.playersJoined.text = (i.PlayerCount + "/" + i.MaxPlayers).ToString();
-            RefreshRoomList();
-            if (i.IsOpen)
+            Debug.Log($"Room Found: {i.Name} | Players: {i.PlayerCount}/{i.MaxPlayers} | Open: {i.IsOpen}");
+
+            GameObject roomInstance = Instantiate(roomListPrefab, roomListParent);
+            RoomName roomListScriptComponent = roomInstance.GetComponent<RoomName>();
+
+            if (roomListScriptComponent != null)
             {
-                if (i.PlayerCount >= i.MaxPlayers / 2)
-                {
-                    roomListScriptComponent.roomStatusImage.color = Color.red;
-                }
-                else
-                {
-                    roomListScriptComponent.roomStatusImage.color = Color.green;
-                }
-            }
-            else
-            {
-                roomListScriptComponent.roomStatusImage.color = Color.red;
-                roomListScriptComponent.roomJoin.interactable = false;
+                roomListScriptComponent.roomName.text = i.Name;
+                roomListScriptComponent.playersJoined.text = $"{i.PlayerCount}/{i.MaxPlayers}";
+                roomListScriptComponent.roomStatusImage.color = i.IsOpen ? Color.green : Color.red;
+                roomListScriptComponent.roomJoin.interactable = i.IsOpen;
             }
         }
     }
 
+
     private void RefreshRoomList()
     {
-
-        PhotonNetwork.GetCustomRoomList(TypedLobby.Default, string.Empty);
-
         foreach (Transform child in roomListParent)
         {
             Destroy(child.gameObject);
         }
+    }
 
-        foreach (RoomInfo roomInfo in roomListParent)
+
+    private void UpdatePlayerList()
+    {
+        foreach (Transform child in playerInfoParent.transform)
         {
-            Instantiate(roomListPrefab, roomListParent);
-            var roomListScriptComponent = roomListPrefab.GetComponent<RoomName>();
-            roomListScriptComponent.roomName.text = roomInfo.Name;
-            roomListScriptComponent.playersJoined.text = $"{roomInfo.PlayerCount}/{roomInfo.MaxPlayers}";
+            Destroy(child.gameObject);
+        }
 
-            if (roomInfo.IsOpen)
-            {
-                if (roomInfo.PlayerCount >= roomInfo.MaxPlayers / 2)
-                {
-                    roomListScriptComponent.roomStatusImage.color = Color.red;
-                }
-                else
-                {
-                    roomListScriptComponent.roomStatusImage.color = Color.green;
-                }
-            }
-            else
-            {
-                roomListScriptComponent.roomStatusImage.color = Color.red;
-                roomListScriptComponent.roomJoin.interactable = false;
-            }
+        foreach (var player in PhotonNetwork.CurrentRoom.Players.Values)
+        {
+            var playerInstance = Instantiate(playerInfo_, playerInfoParent.transform);
+            playerInstance.playerName.text = player.NickName;
         }
     }
 
