@@ -1410,12 +1410,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6505171499673621712, guid: 5dfe21cd177e4a3429d1c590c97331c9, type: 3}
+      propertyPath: speed
+      value: 9.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6505171499673621712, guid: 5dfe21cd177e4a3429d1c590c97331c9, type: 3}
       propertyPath: coinSc
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6505171499673621712, guid: 5dfe21cd177e4a3429d1c590c97331c9, type: 3}
       propertyPath: JumpPower
-      value: 5
+      value: 4.5
       objectReference: {fileID: 0}
     - target: {fileID: 6505171499673621712, guid: 5dfe21cd177e4a3429d1c590c97331c9, type: 3}
       propertyPath: blastStart
@@ -1428,7 +1432,7 @@ PrefabInstance:
     - target: {fileID: 6505171499673621712, guid: 5dfe21cd177e4a3429d1c590c97331c9, type: 3}
       propertyPath: wordManager
       value: 
-      objectReference: {fileID: 236964986}
+      objectReference: {fileID: 0}
     - target: {fileID: 8053419677968253648, guid: 5dfe21cd177e4a3429d1c590c97331c9, type: 3}
       propertyPath: m_Name
       value: Player
@@ -3284,62 +3288,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1306165006150428868, guid: 806ba4195340d904aaf13ff6d7933090, type: 3}
-      propertyPath: TypingSFX
-      value: 
-      objectReference: {fileID: 2054909696}
-    - target: {fileID: 1306165006150428868, guid: 806ba4195340d904aaf13ff6d7933090, type: 3}
-      propertyPath: WordToDisplay
-      value: 
-      objectReference: {fileID: 296478746}
-    - target: {fileID: 1306165006150428868, guid: 806ba4195340d904aaf13ff6d7933090, type: 3}
-      propertyPath: WordsBeingTyped
-      value: 
-      objectReference: {fileID: 1465601657}
-    - target: {fileID: 1306165006150428868, guid: 806ba4195340d904aaf13ff6d7933090, type: 3}
-      propertyPath: playerMovementPlayer
-      value: 
-      objectReference: {fileID: 2054909697}
-    - target: {fileID: 4137428509718776317, guid: 806ba4195340d904aaf13ff6d7933090, type: 3}
-      propertyPath: words.Array.data[0]
-      value: asset
-      objectReference: {fileID: 0}
-    - target: {fileID: 4137428509718776317, guid: 806ba4195340d904aaf13ff6d7933090, type: 3}
-      propertyPath: words.Array.data[1]
-      value: her
-      objectReference: {fileID: 0}
-    - target: {fileID: 4137428509718776317, guid: 806ba4195340d904aaf13ff6d7933090, type: 3}
-      propertyPath: words.Array.data[2]
-      value: machinery
-      objectReference: {fileID: 0}
-    - target: {fileID: 4137428509718776317, guid: 806ba4195340d904aaf13ff6d7933090, type: 3}
-      propertyPath: words.Array.data[3]
-      value: cat
-      objectReference: {fileID: 0}
-    - target: {fileID: 4137428509718776317, guid: 806ba4195340d904aaf13ff6d7933090, type: 3}
-      propertyPath: words.Array.data[4]
-      value: dog
-      objectReference: {fileID: 0}
-    - target: {fileID: 4137428509718776317, guid: 806ba4195340d904aaf13ff6d7933090, type: 3}
-      propertyPath: words.Array.data[5]
-      value: charger
-      objectReference: {fileID: 0}
-    - target: {fileID: 4137428509718776317, guid: 806ba4195340d904aaf13ff6d7933090, type: 3}
-      propertyPath: words.Array.data[6]
-      value: is
-      objectReference: {fileID: 0}
-    - target: {fileID: 4137428509718776317, guid: 806ba4195340d904aaf13ff6d7933090, type: 3}
-      propertyPath: words.Array.data[7]
-      value: sea
-      objectReference: {fileID: 0}
-    - target: {fileID: 4137428509718776317, guid: 806ba4195340d904aaf13ff6d7933090, type: 3}
-      propertyPath: words.Array.data[8]
-      value: eat
-      objectReference: {fileID: 0}
-    - target: {fileID: 4137428509718776317, guid: 806ba4195340d904aaf13ff6d7933090, type: 3}
-      propertyPath: words.Array.data[9]
-      value: boo
-      objectReference: {fileID: 0}
     - target: {fileID: 5892537866368853168, guid: 806ba4195340d904aaf13ff6d7933090, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1
@@ -3384,22 +3332,27 @@ PrefabInstance:
       propertyPath: m_Name
       value: WordOperations
       objectReference: {fileID: 0}
+    - target: {fileID: 6769295495470018600, guid: 806ba4195340d904aaf13ff6d7933090, type: 3}
+      propertyPath: TypingSFX
+      value: 
+      objectReference: {fileID: 2054909696}
+    - target: {fileID: 6769295495470018600, guid: 806ba4195340d904aaf13ff6d7933090, type: 3}
+      propertyPath: WordToDisplay
+      value: 
+      objectReference: {fileID: 296478746}
+    - target: {fileID: 6769295495470018600, guid: 806ba4195340d904aaf13ff6d7933090, type: 3}
+      propertyPath: WordsBeingTyped
+      value: 
+      objectReference: {fileID: 1465601657}
+    - target: {fileID: 6769295495470018600, guid: 806ba4195340d904aaf13ff6d7933090, type: 3}
+      propertyPath: playerMovementPlayer
+      value: 
+      objectReference: {fileID: 2054909697}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 806ba4195340d904aaf13ff6d7933090, type: 3}
---- !u!114 &236964986 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1306165006150428868, guid: 806ba4195340d904aaf13ff6d7933090, type: 3}
-  m_PrefabInstance: {fileID: 236964985}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 25440136eea071549820b4b97972a486, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &242684874
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6836,6 +6789,10 @@ MonoBehaviour:
   enemySpeed: 0
   attackRange: 5
   player: {fileID: 2054909692}
+  blastFX: {fileID: 0}
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!195 &437960548
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -11038,6 +10995,17 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &681241928 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6769295495470018600, guid: 806ba4195340d904aaf13ff6d7933090, type: 3}
+  m_PrefabInstance: {fileID: 236964985}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 152d244e4e79a844eb1e507b525bf42b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &681859661
 GameObject:
   m_ObjectHideFlags: 0
@@ -22830,6 +22798,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 91215212026217302, guid: 04e381017e685b743848d497561db416, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3655623739978668807, guid: 04e381017e685b743848d497561db416, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3953592308582852906, guid: 04e381017e685b743848d497561db416, type: 3}
       propertyPath: player
       value: 
@@ -22837,7 +22813,7 @@ PrefabInstance:
     - target: {fileID: 3953592308582852906, guid: 04e381017e685b743848d497561db416, type: 3}
       propertyPath: wordManager
       value: 
-      objectReference: {fileID: 236964986}
+      objectReference: {fileID: 0}
     - target: {fileID: 5395585038942306579, guid: 04e381017e685b743848d497561db416, type: 3}
       propertyPath: m_Color.b
       value: 0.59607846
@@ -22930,6 +22906,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6794008396675291038, guid: 04e381017e685b743848d497561db416, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7059185868551341777, guid: 04e381017e685b743848d497561db416, type: 3}
       propertyPath: m_Name
       value: Canvas
@@ -22941,10 +22921,14 @@ PrefabInstance:
     - target: {fileID: 7343000243009056666, guid: 04e381017e685b743848d497561db416, type: 3}
       propertyPath: wordManager
       value: 
-      objectReference: {fileID: 236964986}
+      objectReference: {fileID: 681241928}
     - target: {fileID: 7523129721518883383, guid: 04e381017e685b743848d497561db416, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8361692079760175224, guid: 04e381017e685b743848d497561db416, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -23852,9 +23836,13 @@ MonoBehaviour:
   rb: {fileID: 0}
   detectionRange: -25
   enemyHealth: 300
-  enemySpeed: 12
-  attackRange: 7
+  enemySpeed: 20
+  attackRange: 10
   player: {fileID: 2054909692}
+  blastFX: {fileID: 0}
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!50 &1506971903
 Rigidbody2D:
   serializedVersion: 4
@@ -24571,7 +24559,7 @@ Transform:
   m_GameObject: {fileID: 1553320472}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.1639954, y: -0.4059988, z: 0}
+  m_LocalPosition: {x: -1.045, y: -0.433, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -28351,9 +28339,9 @@ ParticleSystem:
         m_NumAlphaKeys: 2
     range: {x: 0, y: 1}
   CollisionModule:
-    enabled: 0
+    enabled: 1
     serializedVersion: 4
-    type: 0
+    type: 1
     collisionMode: 0
     colliderForce: 0
     multiplyColliderForceByParticleSize: 0

@@ -1,14 +1,14 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerShoot : MonoBehaviour
 {
-    public GameObject bullet;
+    public GameObject bulletPrefab;
     public Transform placeToShoot;
-    public float delay = 0.25f; // Change delay to 0.25 seconds
+    public float delay = 0.25f;
     private float timer = 0f;
-    private bool allowToShoot = true;
+    public bool allowToShoot = false;
+    public Rigidbody2D playerRb;
 
     void Update()
     {
@@ -19,13 +19,14 @@ public class PlayerShoot : MonoBehaviour
             if (timer >= delay)
             {
                 Shoot();
-                timer = 0f; // Reset timer after shooting
+                timer = 0f; 
             }
         }
     }
 
     void Shoot()
     {
-        Instantiate(bullet, placeToShoot.transform.position, placeToShoot.transform.rotation);
+        Debug.Log("SPAWNING BULLET!");
+        Instantiate(bulletPrefab, transform.position, transform.rotation);
     }
 }

@@ -45,16 +45,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   words:
-  - apple
-  - banana
-  - cherry
-  - date
-  - elderberry
-  - fig
-  - grape
-  - honeydew
-  - kiwi
-  - lemon
+  - asset
+  - her
+  - machinery
+  - cat
+  - dog
+  - charger
+  - is
+  - sea
+  - eat
+  - boo
   - mango
   - nectarine
   - orange
@@ -179,13 +179,13 @@ MonoBehaviour:
   - data
   - structures
   - algorithms
-  - android
-  - wish
+  - dog
+  - cat
   - develop
   - sweetheart
-  - humanity
-  - cracker
-  - water
+  - phone
+  - mat
+  - machine-123
   - priority
   - space
   - economics
@@ -200,6 +200,17 @@ MonoBehaviour:
   - at
   - whenever
   - wherever
+  bossFightWords:
+  - freeze
+  - unfreeze
+  - dodge
+  - flip
+  - bullet
+  - strike
+  - fire
+  - rush
+  - help
+  - move
 --- !u!1 &6221344967228586940
 GameObject:
   m_ObjectHideFlags: 0
@@ -209,7 +220,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9081929080556197044}
-  - component: {fileID: 1306165006150428868}
+  - component: {fileID: 6769295495470018600}
   m_Layer: 0
   m_Name: WordManager
   m_TagString: Untagged
@@ -232,7 +243,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 5892537866368853168}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1306165006150428868
+--- !u!114 &6769295495470018600
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -241,13 +252,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 6221344967228586940}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 25440136eea071549820b4b97972a486, type: 3}
+  m_Script: {fileID: 11500000, guid: 152d244e4e79a844eb1e507b525bf42b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   charactersTyped: 0
   playerMovementPlayer: {fileID: 0}
   WordToDisplay: {fileID: 0}
   WordsBeingTyped: {fileID: 0}
+  CurrentWord: 
+  RemainingWord: 
   CanJump: 0
   JumpsCount: 0
   TimeSurvived: 0
@@ -257,6 +270,7 @@ MonoBehaviour:
   actualRating: 0
   AllowToAdd: 0
   HasTyped: 0
+  currentLetter: 
 --- !u!1 &6324729415854184360
 GameObject:
   m_ObjectHideFlags: 0

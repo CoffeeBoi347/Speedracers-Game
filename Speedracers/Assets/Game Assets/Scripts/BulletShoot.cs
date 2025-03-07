@@ -1,56 +1,34 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class BulletShoot : MonoBehaviour
 {
-    public float velocity;
-    public Vector3 startPos;
+    public float velocity = 5f;
     public float damagePower = 60f;
+    public Rigidbody2D rb;
+
     private void Start()
     {
-        startPos = transform.position;
-        StartCoroutine("DestroyGameObj", 0.27f);
+        if (rb == null)
+        {
+            rb = GetComponent<Rigidbody2D>();
+        }
+
+        // Apply force to move upwards
+        rb.velocity = new Vector2(velocity, 0f);
     }
 
-    void Update()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        transform.Translate(velocity * Time.deltaTime, 0f, 0f);
-
-        if ((startPos.x - transform.position.x) >= 600f)
-        {
-            Destroy(gameObject);
-        }
-    }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("BossEnemyOne"))
-        {
-            BossEnemy bossEnemy = collision.gameObject.GetComponent<BossEnemy>();
-            if (bossEnemy != null)
-            {
-                bossEnemy.state = EnemyState.TakeHit;
-                bossEnemy.TakeDamage(20);
-                Debug.Log("HELL NAH");
-            }
-        }
-        Rigidbody2D rb = collision.gameObject.GetComponent<Rigidbody2D>();
-        if (rb != null)
-        {
-            rb.bodyType = RigidbodyType2D.Dynamic;
-            Vector2 forceDirection = (collision.transform.position - transform.position).normalized;
-            float forceMagnitude = 5f;
-            rb.AddForce(forceDirection * forceMagnitude, ForceMode2D.Impulse);
-        }
+        // Prevent bullets from instantly disappearing by ignoring "Player"
+        if (collision.gameObject.CompareTag("Player")) return;
 
         Destroy(gameObject);
     }
 
-    private IEnumerator DestroyGameObj(float delay)
+    IEnumerator DestroyGameObj(float time)
     {
-        yield return new WaitForSeconds(delay);
-
+        yield return new WaitForSeconds(time);
         Destroy(gameObject);
     }
 }

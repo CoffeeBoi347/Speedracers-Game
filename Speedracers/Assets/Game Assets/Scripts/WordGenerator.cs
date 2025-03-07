@@ -23,7 +23,9 @@ public class WordGenerator : MonoBehaviour
         "wish", "develop", "sweetheart", "humanity", "cracker", "water", "priority", "space", "economics", "theory", "timetable",
         "insert", "dates", "cloud", "physicist", "tutor", "oral", "at", "whenever", "wherever"};
 
-   
+
+    public string[] bossFightWords = new string[]{ "stop", "strt", "dodge", "flip",
+                                "shot", "strk", "fre", "rush", "help", "move"};
     public string GetRandomWord()
     {
         int RandomNumber = Random.Range(0, words.Length);
@@ -31,5 +33,13 @@ public class WordGenerator : MonoBehaviour
         Debug.Log(RandomWord);
         return RandomWord;
 
+    }
+
+    public string GetRandomWordBossFight()
+    {
+        int RandomNumber = Random.Range(0, bossFightWords.Length);
+        string RandomWord = bossFightWords[RandomNumber];
+        Debug.Log(RandomWord);
+        return RandomWord;
     }
 }
