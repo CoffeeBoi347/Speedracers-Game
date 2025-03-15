@@ -24,6 +24,12 @@ public class PlaneMovementPlayer1 : MonoBehaviour
     public ParticleSystem Explosion;
     public bool endCollide = false;
     public ParticleSystem boomFx;
+    public GameObject bulletObj;
+    public HingeJoint2D hingeJoint;
+    public LineRenderer lineRenderer;
+    public GameObject[] allHinges;
+    public GameObject closestHinge;
+    float closestDistance = Mathf.Infinity; 
     void Start()
     {
         boomFx.Stop();
@@ -32,6 +38,7 @@ public class PlaneMovementPlayer1 : MonoBehaviour
         CollidedBoundary = false;
         CollidedWithPipe = false;
         HasCollided = false;
+        hingeJoint.enabled = false;
         SmokeFXAudio.Stop();
         SmokeFX.Stop();
         playerShoot = FindObjectOfType<PlayerShoot>();
@@ -53,10 +60,24 @@ public class PlaneMovementPlayer1 : MonoBehaviour
             }
         }
 
+        closestDistance = Mathf.Infinity;
+        closestHinge = null;
+
+       foreach(GameObject hinge in allHinges)
+        {
+            float distance = Vector2.Distance(transform.position, hinge.transform.position);
+            if(distance < closestDistance)
+            {
+                closestDistance = distance;
+                closestHinge = hinge;
+            }
+        }
+
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+            Debug.Log("Collision detected with: " + collision.gameObject.name);
         rb.constraints = RigidbodyConstraints2D.None;
         if (collision.gameObject.tag == "Ground" || collision.gameObject.tag == "Pipe" || collision.gameObject.tag == "Obstacle" || collision.gameObject.tag == "Building" || collision.gameObject.tag == "Road")
         {
@@ -69,6 +90,7 @@ public class PlaneMovementPlayer1 : MonoBehaviour
 
         }
 
+ 
         if(collision.gameObject.tag == "BossFight")
         {
             GameObject wordManagerObj = GameObject.FindObjectOfType<WordManager>()?.gameObject;
@@ -148,13 +170,26 @@ public class PlaneMovementPlayer1 : MonoBehaviour
         float scaleX = transform.localScale.x;
         transform.localScale = new Vector2(-scaleX, transform.localScale.y);
         speed = -speed;
+
+        bulletObj.transform.localScale = new Vector2(-bulletObj.transform.localScale.x, bulletObj.transform.localScale.y);
+        var findBulletShoot = bulletObj.GetComponent<BulletShoot>();
+        if(speed > 0)
+        {
+            findBulletShoot.velocity = findBulletShoot.velocity * -1;
+        }
+        else if(speed < 0)
+        {
+            findBulletShoot.velocity = findBulletShoot.velocity * 1;
+        }
     }
 
     public void MovePlayer()
     {
+        
         BossWordManager wordManager = new BossWordManager();
         wordManager.canJump = true;
         rb.gravityScale = 1;
+        transform.localEulerAngles = new Vector3(0f, 0f, 0f);
     }
 
     public void BulletPlayer()
@@ -169,11 +204,71 @@ public class PlaneMovementPlayer1 : MonoBehaviour
 
     public void RushPlayer()
     {
-        rb.MovePosition(new Vector2(transform.position.x + 15f, transform.position.y));
+        Vector3 finalPos = new Vector2(transform.position.x + 20f, transform.position.y);
+        transform.position = finalPos;
         Debug.Log("Rushing Forward!");
         boomFx.Play();
         playerShoot.allowToShoot = false;
 
+    }
+
+    public void GrapplePlayer()
+    {
+        Debug.Log("Grappling");
+
+        if (closestHinge != null)
+        {
+            Debug.Log("THERE IS CLOSEST HINGE NEAR!");
+
+            lineRenderer.SetPosition(0, transform.position);
+            lineRenderer.SetPosition(1, closestHinge.transform.position);
+            lineRenderer.enabled = true;
+            hingeJoint.enabled = true;
+            hingeJoint.connectedBody = null; 
+            hingeJoint.connectedAnchor = closestHinge.transform.position;
+            float distance = Vector2.Distance(closestHinge.transform.position ,transform.position);
+            float timeTaken = (distance / speed);
+            
+            Debug.Log("Setting grapple hinge!");
+            StartCoroutine(pullLineTowardsEnd(transform.position, closestHinge.transform.position, timeTaken));
+            StartCoroutine(PullPlayerToHinge(transform.position, closestHinge.transform.position, timeTaken));
+
+        }
+        else
+        {
+            Debug.Log("CLOSEST HINGE NOT THERE!");
+        }
+    }
+
+    private IEnumerator pullLineTowardsEnd(Vector3 startPos, Vector3 hingePos, float time)
+    {
+        yield return new WaitForSeconds(time);
+        float elapsedTime = 0f;
+
+        while(elapsedTime < time)
+        {
+            elapsedTime += Time.deltaTime;
+            Vector3 endPos = Vector3.Lerp(startPos, hingePos, (elapsedTime / time) * 3f);
+            lineRenderer.SetPosition(1, endPos);
+            yield return null;
+        }
+    }
+
+    private IEnumerator PullPlayerToHinge(Vector3 startPos, Vector3 hingePos, float time)
+    {
+        float elapsedTime = 0f;
+
+        while (elapsedTime < time)
+        {
+            elapsedTime += Time.deltaTime;
+            Vector3 newPos = Vector3.Lerp(startPos, hingePos, (elapsedTime / time) * 3f);
+            transform.position = newPos; 
+            lineRenderer.SetPosition(0, newPos);
+            yield return null;
+        }
+
+        lineRenderer.enabled = false;
+        hingeJoint.enabled = false;
     }
 
     public void SlowPlayer()

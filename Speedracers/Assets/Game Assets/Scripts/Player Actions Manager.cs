@@ -52,6 +52,10 @@ public class PlayerActionsManager : MonoBehaviour
             {
                 "RUSH", () => player.RushPlayer()
             }
+            ,
+            {
+                "GRAPPLE", () => player.GrapplePlayer()
+            }
         };
     }
 
@@ -62,7 +66,6 @@ public class PlayerActionsManager : MonoBehaviour
 
     public void ExecuteAction(string typedWord)
     {
-        Debug.Log("Anna execute action");
         string upperCaseWord = typedWord.ToUpper();
         if (actionMap.ContainsKey(upperCaseWord))
         {
@@ -83,5 +86,6 @@ public enum PlayerActions
     Strike,
     Fire,
     Rush,
-    Move
+    Move,
+    Grapple
 }

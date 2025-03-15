@@ -88,7 +88,7 @@ public class BossAI : MonoBehaviour
                 ApplyImpactDamage();
                 break;
             case BossState.TakeHit:
-                TakeDamage(2f);
+                TakeDamage(4f);
                 break;
             case BossState.Teleport:
                 StartCoroutine(Teleport());
@@ -101,27 +101,51 @@ public class BossAI : MonoBehaviour
 
     public void ApplyImpactDamage()
     {
-        Debug.Log("Hi");
+        if (anim == null)
+        {
+            Debug.LogError("Animator is NULL!");
+            return;
+        }
+
         anim.SetBool("isAttack", true);
         anim.SetBool("isWalking", false);
+
+        if (playerObj == null)
+        {
+            Debug.LogError("playerObj is NULL!");
+            return;
+        }
 
         float horizontalDistance = Mathf.Abs(transform.position.x - playerObj.position.x);
         float verticalDistance = playerObj.position.y - transform.position.y;
 
-        if (horizontalDistance <= attackRange && verticalDistance < 3f)
+        if (horizontalDistance <= attackRange && verticalDistance < 2.25f)
         {
             Rigidbody2D playerRb = playerObj.GetComponent<Rigidbody2D>();
             if (playerRb != null)
             {
-                // Apply knockback force
+                Debug.Log("APPLY DAMAGE TO PLAYER!");
                 playerRb.velocity = new Vector2(playerRb.velocity.x, knockbackForce);
-
-                // Play particle effect at player's position
+                playerRb.AddTorque(knockbackForce);
                 particlePrefab.Play();
-                StartCoroutine(SetParticlePrefabPlayFalse(1f));
+
+                if (particlePrefab != null)
+                {
+                    particlePrefab.Play();
+                    StartCoroutine(SetParticlePrefabPlayFalse(1f));
+                }
+                else
+                {
+                    Debug.LogError("Particle System is NULL!");
+                }
+            }
+            else
+            {
+                Debug.LogError("Player Rigidbody is NULL!");
             }
         }
     }
+
 
 
     public void TakeDamage(float damage)

@@ -20,6 +20,7 @@ TagManager:
   - Obstacle
   - BossEnemyOne
   - Circle
+  - GrappleObj
   layers:
   - Default
   - TransparentFX

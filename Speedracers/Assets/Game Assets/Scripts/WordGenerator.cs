@@ -25,7 +25,7 @@ public class WordGenerator : MonoBehaviour
 
 
     public string[] bossFightWords = new string[]{ "stop", "strt", "dodge", "flip",
-                                "shot", "strk", "fre", "rush", "help", "move"};
+                                "shot", "strk", "fre", "rush", "help", "move", "grapple" };
     public string GetRandomWord()
     {
         int RandomNumber = Random.Range(0, words.Length);
