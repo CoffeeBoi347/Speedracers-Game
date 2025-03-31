@@ -35,4 +35,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Levels/Level0 After CutScene.unity
     guid: f854ef44b70700f448a8b9c93283bf36
+  - enabled: 1
+    path: Assets/Scenes/Levels/Level 3.unity
+    guid: 5695100dfb169ab4396a5379cbec9e9b
+  - enabled: 1
+    path: Assets/Scenes/Levels/Level 2.unity
+    guid: abc9ca39a3c0ec041b2a84d8c570fe3a
   m_configObjects: {}

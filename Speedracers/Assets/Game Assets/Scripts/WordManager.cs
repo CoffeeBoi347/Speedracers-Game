@@ -92,7 +92,6 @@ public class BossWordManager : MonoBehaviour
                     hasTyped = true;
                     canJump = true;
                     hasGameBegan = true;
-
                     if (charactersTyped >= wordCheckEligibility)
                     {
                         if (possibleWords.Count <= 0)
@@ -114,6 +113,14 @@ public class BossWordManager : MonoBehaviour
         else
         {
             canJump = false;
+        }
+
+        if (Input.GetKeyDown(KeyCode.Backspace) && wordBeingTyped.Length > 0)
+        {
+            wordBeingTyped = wordBeingTyped.Substring(0, wordBeingTyped.Length - 1);
+            wordsBeingTypedTxt.text = wordBeingTyped;
+            charactersTyped = Mathf.Max(0, charactersTyped - 1);
+            RemoveWord(wordBeingTyped);
         }
     }
 

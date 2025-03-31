@@ -1,0 +1,427 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &92557371648289291
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8414524548474781439}
+  - component: {fileID: 7964638959903427527}
+  m_Layer: 0
+  m_Name: WordManager (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8414524548474781439
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 92557371648289291}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2023974729755058165}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7964638959903427527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 92557371648289291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25440136eea071549820b4b97972a486, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wordBeingTyped: 
+  remainingWord: 
+  targetWord: 
+  possibleWords: []
+  playerObj: {fileID: 0}
+  playerActionsManager: {fileID: 0}
+  canJump: 0
+  allowToAdd: 0
+  foundRemainingWord: 0
+  hasTyped: 0
+  hasGameBegan: 0
+  jumpSFX: {fileID: 0}
+  charactersTyped: 0
+  index: 0
+  wordCheckEligibility: 1
+  wordsBeingTypedTxt: {fileID: 0}
+  remainingWordTxt: {fileID: 0}
+  pressTypeTxt: {fileID: 0}
+  possibleGuessesTxt: {fileID: 0}
+--- !u!1 &1931610244182263880
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2023974729755058165}
+  m_Layer: 0
+  m_Name: WordOperations
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2023974729755058165
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1931610244182263880}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5345260557303596527}
+  - {fileID: 8414524548474781439}
+  - {fileID: 7220366028609749527}
+  - {fileID: 923726072681773169}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &5110920390955413088
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7220366028609749527}
+  - component: {fileID: 8127712971915103797}
+  m_Layer: 0
+  m_Name: WordGenerator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7220366028609749527
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5110920390955413088}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 301.58832, y: 177.68062, z: -3.7612848}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2023974729755058165}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8127712971915103797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5110920390955413088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96baeb8c768623f41a3f97e4b5427e71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  words:
+  - asset
+  - her
+  - machinery
+  - cat
+  - dog
+  - charger
+  - is
+  - sea
+  - eat
+  - boo
+  - mango
+  - nectarine
+  - orange
+  - papaya
+  - quince
+  - raspberry
+  - strawberry
+  - tangerine
+  - ugli
+  - watermelon
+  - apricot
+  - blackberry
+  - blueberry
+  - cantaloupe
+  - dragonfruit
+  - elderflower
+  - fig
+  - guava
+  - huckleberry
+  - ita
+  - jackfruit
+  - kumquat
+  - lychee
+  - melon
+  - nectarine
+  - olive
+  - passionfruit
+  - quince
+  - rhubarb
+  - soursop
+  - tamarind
+  - ugli
+  - vanilla
+  - wolfberry
+  - xigua
+  - yam
+  - zucchini
+  - avocado
+  - pear
+  - plum
+  - extraterrestrial
+  - the
+  - or
+  - and
+  - is
+  - her
+  - kale
+  - characteristic
+  - recommendation
+  - constitutional
+  - correspondence
+  - matrix
+  - division
+  - go
+  - jaw
+  - rib
+  - cashew
+  - chocolate
+  - gamedev
+  - entertainment
+  - professionals
+  - pledge
+  - potatoes
+  - cream
+  - what
+  - if
+  - gods
+  - mythology
+  - humans
+  - war
+  - swords
+  - humanity
+  - had
+  - its
+  - time
+  - reality
+  - poor
+  - families
+  - crash
+  - runway
+  - emergency
+  - couldnt
+  - changes
+  - worlds
+  - wars
+  - totality
+  - external
+  - tiffin
+  - muffin
+  - computer
+  - programming
+  - kidzone
+  - strawberry
+  - touch
+  - hands
+  - great
+  - man
+  - woman
+  - girls
+  - ramen
+  - business
+  - sweet
+  - bitter
+  - job
+  - struggle
+  - mathematics
+  - overcome
+  - python
+  - csharp
+  - java
+  - html
+  - css
+  - package
+  - college
+  - university
+  - max
+  - jack
+  - mahesh
+  - salmankhan
+  - sayan
+  - digital
+  - data
+  - structures
+  - algorithms
+  - android
+  - wish
+  - develop
+  - sweetheart
+  - humanity
+  - cracker
+  - water
+  - priority
+  - space
+  - economics
+  - theory
+  - timetable
+  - insert
+  - dates
+  - cloud
+  - physicist
+  - tutor
+  - oral
+  - at
+  - whenever
+  - wherever
+  bossFightWords:
+  - stop
+  - strt
+  - dodge
+  - flip
+  - blt
+  - strike
+  - fre
+  - rush
+  - help
+  - move
+  - grapple
+--- !u!1 &6104701545500013708
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 923726072681773169}
+  - component: {fileID: 1861673059869200490}
+  m_Layer: 0
+  m_Name: WordGenerator (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &923726072681773169
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6104701545500013708}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 301.58832, y: 177.68062, z: -3.7612848}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2023974729755058165}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1861673059869200490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6104701545500013708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77eb32aafda548f4f9d4c48d68938023, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  words:
+  - freeze
+  - unfreeze
+  - dodge
+  - flip
+  - bullet
+  - strike
+  - fire
+  - rush
+  - help
+  - move
+--- !u!1 &8712086646125896953
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5345260557303596527}
+  - component: {fileID: 5312807551080657523}
+  m_Layer: 0
+  m_Name: WordManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &5345260557303596527
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8712086646125896953}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2023974729755058165}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5312807551080657523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8712086646125896953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 152d244e4e79a844eb1e507b525bf42b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  charactersTyped: 0
+  playerMovementPlayer: {fileID: 0}
+  WordToDisplay: {fileID: 0}
+  WordsBeingTyped: {fileID: 0}
+  CurrentWord: 
+  RemainingWord: 
+  CanJump: 0
+  JumpsCount: 0
+  TimeSurvived: 0
+  WPM: 0
+  TypingSFX: {fileID: 0}
+  Rating: 0
+  actualRating: 0
+  AllowToAdd: 0
+  HasTyped: 0
+  currentLetter: 

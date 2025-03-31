@@ -5,6 +5,8 @@ public class BossAI : MonoBehaviour
 {
     public Transform playerObj;
     public BossWordManager wordManager;
+    public HealthManagerBattle playerHealthManager;
+    public HealthManagerBoss healthManagerBoss;
     public BossState enemyState;
     public Animator anim;
     public float health = 450f;
@@ -13,15 +15,20 @@ public class BossAI : MonoBehaviour
     public float attackCooldown;
     public float teleportCooldown;
     public bool phase2 = false;
+    public bool phase3 = false;
     public float lastAttackTime;
     public float lastTeleportTime;
     public float knockbackForce;
     public bool takeDamage = false;
     public ParticleSystem particlePrefab;
-
+    public bool isAttacking = false;
+    public float damagePlayer = 12f;
+    public bool damagedToPlayer = false;
     private void Start()
     {
+        healthManagerBoss = GetComponent<HealthManagerBoss>();  
         wordManager = FindObjectOfType<BossWordManager>();
+        playerHealthManager = FindObjectOfType<HealthManagerBattle>();
     }
     private void Update()
     {
@@ -29,11 +36,19 @@ public class BossAI : MonoBehaviour
         float horizontalDistance = Mathf.Abs(transform.position.x - playerObj.position.x);
         float verticalDistance = playerObj.position.y - transform.position.y;
 
-        if(health <= 100f && !phase2)
+        if(health <= 370f && !phase2)
         {
             phase2 = true;
-            attackCooldown *= 0.7f;
-            teleportCooldown *= 0.6f;
+            attackCooldown *= 0.6f;
+            teleportCooldown *= 0.7f;
+        }
+
+        if(health <= 200f && phase2 && !phase3)
+        {
+            phase3 = true;
+            phase2 = false;
+            attackCooldown *= 0.6f;
+            teleportCooldown *= 0.85f;
         }
 
         if(takeDamage && health > 0f)
@@ -47,7 +62,7 @@ public class BossAI : MonoBehaviour
             ChangeState(BossState.Teleport);
             Debug.Log("Teleporting..");
         }
-        else if(Random.value < 0.7f && (horizontalDistance < attackRange && verticalDistance < 3.5f) && Time.time - lastAttackTime > attackCooldown)
+        else if(Random.value < 0.6f && (horizontalDistance < attackRange && verticalDistance < 2.5f) && Time.time - lastAttackTime > attackCooldown)
         {
             ChangeState(BossState.Attack);
             Debug.Log("Attacking");
@@ -79,6 +94,7 @@ public class BossAI : MonoBehaviour
         switch (newState)
         {
             case BossState.Idle:
+                isAttacking = false;
                 anim.SetBool("isIdle", true);
                 break;
             case BossState.Walk:
@@ -88,7 +104,7 @@ public class BossAI : MonoBehaviour
                 ApplyImpactDamage();
                 break;
             case BossState.TakeHit:
-                TakeDamage(4f);
+                TakeDamage(6f);
                 break;
             case BossState.Teleport:
                 StartCoroutine(Teleport());
@@ -101,6 +117,8 @@ public class BossAI : MonoBehaviour
 
     public void ApplyImpactDamage()
     {
+        isAttacking = true;
+        SetAttackToTrue();
         if (anim == null)
         {
             Debug.LogError("Animator is NULL!");
@@ -127,8 +145,10 @@ public class BossAI : MonoBehaviour
                 Debug.Log("APPLY DAMAGE TO PLAYER!");
                 playerRb.velocity = new Vector2(playerRb.velocity.x, knockbackForce);
                 playerRb.AddTorque(knockbackForce);
+                damagedToPlayer = true;
                 particlePrefab.Play();
-
+                playerHealthManager.health -= damagePlayer;
+                StartCoroutine(SetDamageToPlayerFalse(0.01f));
                 if (particlePrefab != null)
                 {
                     particlePrefab.Play();
@@ -150,6 +170,7 @@ public class BossAI : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
+        isAttacking = false;
         if (enemyState == BossState.Death) return;
         takeDamage = true;
         anim.SetBool("isTakeHit", true);
@@ -172,6 +193,7 @@ public class BossAI : MonoBehaviour
 
     void RecoverFromHit()
     {
+        isAttacking = false;
         ChangeState(BossState.Idle);
         anim.SetBool("isIdle", true);
         anim.SetBool("isTakeHit", false);
@@ -190,6 +212,7 @@ public class BossAI : MonoBehaviour
 
     IEnumerator WalkToPlayer()
     {
+        isAttacking = false;
         anim.SetBool("isWalking", true);
         anim.SetBool("isTeleport", false);
         float bossY = transform.position.y;
@@ -203,6 +226,7 @@ public class BossAI : MonoBehaviour
 
     IEnumerator Teleport()
     {
+        isAttacking = false;
         lastTeleportTime = Time.time;
         anim.SetBool("isWalking", false);
         anim.SetBool("isTeleport", true);
@@ -228,12 +252,23 @@ public class BossAI : MonoBehaviour
         particlePrefab.Stop();
     }
 
+    IEnumerator SetDamageToPlayerFalse(float time)
+    {
+        yield return new WaitForSeconds(time);
+        damagedToPlayer = false;
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Bullet"))
         {
             ChangeState(BossState.TakeHit);
         }
+    }
+
+    public bool SetAttackToTrue()
+    {
+        return isAttacking = true;
     }
 }
 

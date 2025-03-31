@@ -10,6 +10,7 @@ public class PlaneMovementPlayer1 : MonoBehaviour
     public BossWordManager wordManager;
     public float JumpPower;
     public Rigidbody2D rb;
+    public GameObject damagedPlayerPrefab;
     public ParticleSystem SmokeFX;
     public float speed;
     public bool AllowedToJump = true;
@@ -29,7 +30,9 @@ public class PlaneMovementPlayer1 : MonoBehaviour
     public LineRenderer lineRenderer;
     public GameObject[] allHinges;
     public GameObject closestHinge;
-    float closestDistance = Mathf.Infinity; 
+    public bool damagedByBoss = false;
+    float closestDistance = Mathf.Infinity;
+    public ParticleSystem impactFX;
     void Start()
     {
         boomFx.Stop();
@@ -49,6 +52,10 @@ public class PlaneMovementPlayer1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(damagedPlayerPrefab != null)
+        {
+            damagedPlayerPrefab.transform.position = transform.position;
+        }
         wordManager = FindObjectOfType<BossWordManager>(); // to access the components of the word manager script. 
         if (AllowedToJump)
         {
@@ -59,7 +66,7 @@ public class PlaneMovementPlayer1 : MonoBehaviour
                 SmokeFXAudio.Play();
             }
         }
-
+        
         closestDistance = Mathf.Infinity;
         closestHinge = null;
 
@@ -77,6 +84,7 @@ public class PlaneMovementPlayer1 : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        impactFX.Play();
             Debug.Log("Collision detected with: " + collision.gameObject.name);
         rb.constraints = RigidbodyConstraints2D.None;
         if (collision.gameObject.tag == "Ground" || collision.gameObject.tag == "Pipe" || collision.gameObject.tag == "Obstacle" || collision.gameObject.tag == "Building" || collision.gameObject.tag == "Road")
@@ -88,6 +96,14 @@ public class PlaneMovementPlayer1 : MonoBehaviour
             AllowedToJump = false;
             StartCoroutine(ReloadScene(2f));
 
+        }
+
+        if (collision.gameObject.CompareTag("BossEnemyOne"))
+        {
+            damagedByBoss = true;
+            Instantiate(damagedPlayerPrefab, transform.position, transform.rotation);
+            StartCoroutine(SetBossAttackToFalse(0.02f));
+            StartCoroutine(RemoveDamagedPlayerPrefab(0.05f));
         }
 
  
@@ -271,6 +287,12 @@ public class PlaneMovementPlayer1 : MonoBehaviour
         hingeJoint.enabled = false;
     }
 
+    private IEnumerator RemoveDamagedPlayerPrefab(float time)
+    {
+        yield return new WaitForSeconds(time);
+        Destroy(damagedPlayerPrefab);
+    }
+
     public void SlowPlayer()
     {
         speed -= 1;
@@ -280,5 +302,11 @@ public class PlaneMovementPlayer1 : MonoBehaviour
     {
         yield return new WaitForSeconds(time);
         SceneManager.LoadScene(sceneIndex);
+    }
+
+    private IEnumerator SetBossAttackToFalse(float time)
+    {
+        yield return new WaitForSeconds(time);
+        damagedByBoss = false;
     }
 }

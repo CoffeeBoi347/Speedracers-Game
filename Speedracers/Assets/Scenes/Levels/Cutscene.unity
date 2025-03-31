@@ -7015,6 +7015,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerObj: {fileID: 0}
   wordManager: {fileID: 0}
+  playerHealthManager: {fileID: 0}
+  healthManagerBoss: {fileID: 0}
   enemyState: 0
   anim: {fileID: 437960544}
   health: 450
@@ -7023,11 +7025,15 @@ MonoBehaviour:
   attackCooldown: 0
   teleportCooldown: 0
   phase2: 0
+  phase3: 0
   lastAttackTime: 0
   lastTeleportTime: 0
   knockbackForce: 0
   takeDamage: 0
   particlePrefab: {fileID: 0}
+  isAttacking: 0
+  damagePlayer: 12
+  damagedToPlayer: 0
 --- !u!195 &437960548
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -24407,6 +24413,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerObj: {fileID: 0}
   wordManager: {fileID: 0}
+  playerHealthManager: {fileID: 0}
+  healthManagerBoss: {fileID: 0}
   enemyState: 0
   anim: {fileID: 1506971896}
   health: 450
@@ -24415,11 +24423,15 @@ MonoBehaviour:
   attackCooldown: 0
   teleportCooldown: 0
   phase2: 0
+  phase3: 0
   lastAttackTime: 0
   lastTeleportTime: 0
   knockbackForce: 0
   takeDamage: 0
   particlePrefab: {fileID: 0}
+  isAttacking: 0
+  damagePlayer: 12
+  damagedToPlayer: 0
 --- !u!50 &1506971903
 Rigidbody2D:
   serializedVersion: 4

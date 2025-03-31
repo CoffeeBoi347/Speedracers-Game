@@ -220,7 +220,7 @@ GameObject:
   - component: {fileID: 15245641}
   m_Layer: 0
   m_Name: NeonGround (4)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -350,7 +350,7 @@ GameObject:
   - component: {fileID: 32370466}
   m_Layer: 0
   m_Name: NeonGround (16)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -564,7 +564,7 @@ GameObject:
   - component: {fileID: 43607280}
   m_Layer: 0
   m_Name: NeonGround (15)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -862,7 +862,7 @@ GameObject:
   - component: {fileID: 52725264}
   m_Layer: 0
   m_Name: NeonGround (2)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1076,7 +1076,7 @@ GameObject:
   - component: {fileID: 56720524}
   m_Layer: 0
   m_Name: NeonGround (12)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1433,6 +1433,10 @@ PrefabInstance:
       propertyPath: wordManager
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 7936079004022015231, guid: 5dfe21cd177e4a3429d1c590c97331c9, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b1ea020609744454c92d74aace886317, type: 3}
     - target: {fileID: 8053419677968253648, guid: 5dfe21cd177e4a3429d1c590c97331c9, type: 3}
       propertyPath: m_Name
       value: Player
@@ -2508,7 +2512,7 @@ GameObject:
   - component: {fileID: 120938401}
   m_Layer: 0
   m_Name: NeonGround (15)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3761,7 +3765,7 @@ GameObject:
   - component: {fileID: 279644460}
   m_Layer: 0
   m_Name: NeonGround
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3975,7 +3979,7 @@ GameObject:
   - component: {fileID: 281197279}
   m_Layer: 0
   m_Name: NeonGround
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4988,7 +4992,7 @@ GameObject:
   - component: {fileID: 348322387}
   m_Layer: 0
   m_Name: NeonGround (6)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5502,7 +5506,7 @@ GameObject:
   - component: {fileID: 374625749}
   m_Layer: 0
   m_Name: NeonGround (5)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5881,7 +5885,7 @@ GameObject:
   - component: {fileID: 401794889}
   m_Layer: 0
   m_Name: NeonGround (3)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6413,7 +6417,7 @@ GameObject:
   - component: {fileID: 421706599}
   m_Layer: 0
   m_Name: NeonGround (2)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6780,19 +6784,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2b2bdc4d3afaf04fa01c6e34c215545, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  state: 0
-  enemyObj: {fileID: 0}
+  playerObj: {fileID: 0}
+  wordManager: {fileID: 0}
+  playerHealthManager: {fileID: 0}
+  healthManagerBoss: {fileID: 0}
+  enemyState: 0
   anim: {fileID: 437960544}
-  rb: {fileID: 0}
-  detectionRange: 0
-  enemyHealth: 0
-  enemySpeed: 0
+  health: 450
+  velocity: 0
   attackRange: 5
-  player: {fileID: 2054909692}
-  blastFX: {fileID: 0}
-  playerLayer:
-    serializedVersion: 2
-    m_Bits: 0
+  attackCooldown: 0
+  teleportCooldown: 0
+  phase2: 0
+  phase3: 0
+  lastAttackTime: 0
+  lastTeleportTime: 0
+  knockbackForce: 0
+  takeDamage: 0
+  particlePrefab: {fileID: 0}
+  isAttacking: 0
+  damagePlayer: 12
+  damagedToPlayer: 0
 --- !u!195 &437960548
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -6912,7 +6924,7 @@ GameObject:
   - component: {fileID: 455223281}
   m_Layer: 0
   m_Name: NeonGround (6)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7502,7 +7514,7 @@ GameObject:
   - component: {fileID: 474125103}
   m_Layer: 0
   m_Name: NeonGround (14)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7632,7 +7644,7 @@ GameObject:
   - component: {fileID: 474158317}
   m_Layer: 0
   m_Name: NeonGround (11)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8204,7 +8216,7 @@ GameObject:
   - component: {fileID: 497998118}
   m_Layer: 0
   m_Name: NeonGround (3)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8334,7 +8346,7 @@ GameObject:
   - component: {fileID: 499253480}
   m_Layer: 0
   m_Name: NeonGround (9)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8548,7 +8560,7 @@ GameObject:
   - component: {fileID: 509214401}
   m_Layer: 0
   m_Name: NeonGround (10)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9519,7 +9531,7 @@ GameObject:
   - component: {fileID: 573411756}
   m_Layer: 0
   m_Name: NeonGround (7)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9765,7 +9777,7 @@ GameObject:
   - component: {fileID: 608670596}
   m_Layer: 0
   m_Name: NeonGround (14)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10409,7 +10421,7 @@ GameObject:
   - component: {fileID: 654404170}
   m_Layer: 0
   m_Name: NeonGround (11)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10603,7 +10615,7 @@ GameObject:
   - component: {fileID: 666682212}
   m_Layer: 0
   m_Name: NeonGround (14)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11019,7 +11031,7 @@ GameObject:
   - component: {fileID: 681859663}
   m_Layer: 0
   m_Name: NeonGround (1)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11191,7 +11203,7 @@ GameObject:
   - component: {fileID: 697050178}
   m_Layer: 0
   m_Name: NeonGround (4)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12136,7 +12148,7 @@ GameObject:
   - component: {fileID: 761864539}
   m_Layer: 0
   m_Name: NeonGround (13)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13322,7 +13334,7 @@ GameObject:
   - component: {fileID: 871254788}
   m_Layer: 0
   m_Name: NeonGround (7)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13518,7 +13530,7 @@ GameObject:
   - component: {fileID: 874254960}
   m_Layer: 0
   m_Name: NeonGround (11)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14239,7 +14251,7 @@ GameObject:
   - component: {fileID: 907974167}
   m_Layer: 0
   m_Name: NeonGround (10)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14453,7 +14465,7 @@ GameObject:
   - component: {fileID: 918034601}
   m_Layer: 0
   m_Name: NeonGround (7)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14669,7 +14681,7 @@ GameObject:
   - component: {fileID: 932773157}
   m_Layer: 0
   m_Name: NeonGround (8)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16604,7 +16616,7 @@ GameObject:
   - component: {fileID: 1072237980}
   m_Layer: 0
   m_Name: NeonGround (6)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16765,7 +16777,7 @@ GameObject:
   - component: {fileID: 1093985518}
   m_Layer: 0
   m_Name: NeonGround (15)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16979,7 +16991,7 @@ GameObject:
   - component: {fileID: 1109981800}
   m_Layer: 0
   m_Name: NeonGround (2)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17193,7 +17205,7 @@ GameObject:
   - component: {fileID: 1115959667}
   m_Layer: 0
   m_Name: NeonGround (8)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17323,7 +17335,7 @@ GameObject:
   - component: {fileID: 1124526234}
   m_Layer: 0
   m_Name: NeonGround (1)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17772,7 +17784,7 @@ GameObject:
   - component: {fileID: 1139694780}
   m_Layer: 0
   m_Name: NeonGround (5)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18177,7 +18189,7 @@ GameObject:
   - component: {fileID: 1158594061}
   m_Layer: 0
   m_Name: Ground
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18231,7 +18243,7 @@ GameObject:
   - component: {fileID: 1175647185}
   m_Layer: 0
   m_Name: NeonGround (10)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18659,7 +18671,7 @@ GameObject:
   - component: {fileID: 1199184015}
   m_Layer: 0
   m_Name: NeonGround
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19035,7 +19047,7 @@ GameObject:
   - component: {fileID: 1214496584}
   m_Layer: 0
   m_Name: NeonGround (9)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20127,7 +20139,7 @@ GameObject:
   - component: {fileID: 1262574317}
   m_Layer: 0
   m_Name: NeonGround (7)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21481,7 +21493,7 @@ GameObject:
   - component: {fileID: 1342371788}
   m_Layer: 0
   m_Name: NeonGround (15)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21947,7 +21959,7 @@ GameObject:
   - component: {fileID: 1395741387}
   m_Layer: 0
   m_Name: NeonGround (12)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22245,7 +22257,7 @@ GameObject:
   - component: {fileID: 1427465244}
   m_Layer: 0
   m_Name: NeonGround (13)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22375,7 +22387,7 @@ GameObject:
   - component: {fileID: 1434232347}
   m_Layer: 0
   m_Name: NeonGround (5)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22673,7 +22685,7 @@ GameObject:
   - component: {fileID: 1450168057}
   m_Layer: 0
   m_Name: NeonGround (11)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22967,7 +22979,7 @@ GameObject:
   - component: {fileID: 1467968360}
   m_Layer: 0
   m_Name: NeonGround (9)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23097,7 +23109,7 @@ GameObject:
   - component: {fileID: 1477241879}
   m_Layer: 0
   m_Name: NeonGround (12)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23830,19 +23842,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2b2bdc4d3afaf04fa01c6e34c215545, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  state: 0
-  enemyObj: {fileID: 1506971895}
+  playerObj: {fileID: 0}
+  wordManager: {fileID: 0}
+  playerHealthManager: {fileID: 0}
+  healthManagerBoss: {fileID: 0}
+  enemyState: 0
   anim: {fileID: 1506971896}
-  rb: {fileID: 0}
-  detectionRange: -25
-  enemyHealth: 300
-  enemySpeed: 20
+  health: 450
+  velocity: 0
   attackRange: 10
-  player: {fileID: 2054909692}
-  blastFX: {fileID: 0}
-  playerLayer:
-    serializedVersion: 2
-    m_Bits: 0
+  attackCooldown: 0
+  teleportCooldown: 0
+  phase2: 0
+  phase3: 0
+  lastAttackTime: 0
+  lastTeleportTime: 0
+  knockbackForce: 0
+  takeDamage: 0
+  particlePrefab: {fileID: 0}
+  isAttacking: 0
+  damagePlayer: 12
+  damagedToPlayer: 0
 --- !u!50 &1506971903
 Rigidbody2D:
   serializedVersion: 4
@@ -23961,7 +23981,7 @@ GameObject:
   - component: {fileID: 1515573758}
   m_Layer: 0
   m_Name: NeonGround (13)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24331,7 +24351,7 @@ GameObject:
   - component: {fileID: 1533180277}
   m_Layer: 0
   m_Name: NeonGround (6)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29995,7 +30015,7 @@ GameObject:
   - component: {fileID: 1616109007}
   m_Layer: 0
   m_Name: NeonGround (2)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30551,7 +30571,7 @@ GameObject:
   - component: {fileID: 1649467627}
   m_Layer: 0
   m_Name: NeonGround (16)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30765,7 +30785,7 @@ GameObject:
   - component: {fileID: 1688110898}
   m_Layer: 0
   m_Name: NeonGround (3)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31550,7 +31570,7 @@ GameObject:
   - component: {fileID: 1715857071}
   m_Layer: 0
   m_Name: NeonGround (4)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32095,7 +32115,7 @@ GameObject:
   - component: {fileID: 1760424509}
   m_Layer: 0
   m_Name: NeonGround (1)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32517,7 +32537,7 @@ GameObject:
   - component: {fileID: 1789887721}
   m_Layer: 0
   m_Name: NeonGround (10)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33593,7 +33613,7 @@ GameObject:
   - component: {fileID: 1848919756}
   m_Layer: 0
   m_Name: NeonGround (14)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33723,7 +33743,7 @@ GameObject:
   - component: {fileID: 1851231043}
   m_Layer: 0
   m_Name: NeonGround (9)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33853,7 +33873,7 @@ GameObject:
   - component: {fileID: 1853996919}
   m_Layer: 0
   m_Name: NeonGround (8)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34411,7 +34431,7 @@ GameObject:
   - component: {fileID: 1876960828}
   m_Layer: 0
   m_Name: NeonGround (5)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34804,7 +34824,7 @@ GameObject:
   - component: {fileID: 1904698067}
   m_Layer: 0
   m_Name: NeonGround (13)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35180,7 +35200,7 @@ GameObject:
   - component: {fileID: 1946480178}
   m_Layer: 0
   m_Name: NeonGround
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36048,7 +36068,7 @@ GameObject:
   - component: {fileID: 2020676910}
   m_Layer: 0
   m_Name: NeonGround (3)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36178,7 +36198,7 @@ GameObject:
   - component: {fileID: 2020707274}
   m_Layer: 0
   m_Name: NeonGround (8)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36393,7 +36413,7 @@ GameObject:
   - component: {fileID: 2023724095}
   m_Layer: 0
   m_Name: NeonGround (4)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37848,7 +37868,7 @@ GameObject:
   - component: {fileID: 2118612639}
   m_Layer: 0
   m_Name: NeonGround (1)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -38062,7 +38082,7 @@ GameObject:
   - component: {fileID: 2123333334}
   m_Layer: 0
   m_Name: NeonGround (12)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

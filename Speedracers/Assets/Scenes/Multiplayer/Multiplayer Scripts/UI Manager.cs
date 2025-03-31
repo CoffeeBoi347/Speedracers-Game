@@ -25,7 +25,7 @@ public class UIManager : Singleton<UIManager>
     [SerializeField] private Slider maxPlayersVal;
     [SerializeField] private Button viewRoomButton;
     [SerializeField] private Button joinRoomButton;
-
+    [SerializeField] private Button quitRoomButton;
 
     [Header("Create Room")]
     public TMP_InputField roomNameField;
@@ -90,6 +90,17 @@ public class UIManager : Singleton<UIManager>
         roomOptions.MaxPlayers = (int)maxPlayersVal.value;
         roomOptions.EmptyRoomTtl = 45000;
         PhotonNetworkManager.instance.CreateRoom(roomName.text, roomOptions);
-        Debug.Log("Room created!");
-    } 
+        Debug.Log("Room created! UI Manager!");
+        OnWaitingArea();
+
+    }
+
+    public void OnQuitRoom()
+    {
+        if (PhotonNetwork.InRoom)
+        {
+            PhotonNetwork.LeaveRoom(this);
+            GameManagerMultiplayer.Instance.OpenMenu(EMenuName.ViewAllRooms);
+        }
+    }
 }

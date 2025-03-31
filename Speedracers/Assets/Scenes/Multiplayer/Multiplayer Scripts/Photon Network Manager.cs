@@ -21,9 +21,11 @@ public class PhotonNetworkManager : MonoBehaviourPunCallbacks
     [SerializeField] private TextMeshProUGUI roomErrorMessage;
     [SerializeField] TMP_InputField roomInputField;
     private string time;
+    [SerializeField] private TextMeshProUGUI roomNameTxt;
 
     ExitGames.Client.Photon.Hashtable testing;
 
+    private string botName = "alex_the_goat_" + UnityEngine.Random.Range(1, 1000);  // Unique bot name
 
     private void Awake()
     {
@@ -31,10 +33,11 @@ public class PhotonNetworkManager : MonoBehaviourPunCallbacks
             instance = this;
         else
             DontDestroyOnLoad(instance); // this is a keyword used to refer over objects
+
     }
     private void Update()
     {
-
+        roomNameTxt.text = "ROOM NAME: " + roomName;
         int ping = PhotonNetwork.GetPing();
         pingText.text = "Ping: " + ping.ToString();
 
@@ -50,6 +53,20 @@ public class PhotonNetworkManager : MonoBehaviourPunCallbacks
         Debug.Log($"Current Nickname: {PhotonNetwork.NickName}");
 
     }
+
+    public void CreateRoomBot()
+    {
+        RoomOptions roomOptions = new RoomOptions
+        {
+            IsOpen = true,  // Room is open for players to join
+            IsVisible = true,  // Room is visible in the list
+            MaxPlayers = 4 // Max number of players in the room
+        };
+
+        string room_name = "random_room" + UnityEngine.Random.Range(0000, 9999); // Random room name
+        PhotonNetwork.CreateRoom(room_name, roomOptions); // Create room with random name
+    }
+
     public override void OnJoinedLobby()
     {
         base.OnJoinedLobby();
@@ -87,16 +104,29 @@ public class PhotonNetworkManager : MonoBehaviourPunCallbacks
         Debug.Log("Public button clicked!");
         GameManagerMultiplayer.Instance.OpenMenu(EMenuName.WaitingArea);
         PhotonNetwork.AutomaticallySyncScene = true;
+        StartCoroutine(NewRoomCreated(5f));
     }
 
 
     public void CreateRoom(string name, RoomOptions roomOptions)
     {
-        PhotonNetwork.CreateRoom(name, roomOptions);
+
+        string roomName = roomInputField.text;  
+        name = roomName;
+        if (!string.IsNullOrEmpty(roomName))
+        {
+            PhotonNetwork.CreateRoom(roomName, roomOptions);
+        }
+        else
+        {
+            Debug.LogError("Room name is empty!");
+        }
+
+
+        PhotonNetwork.CreateRoom(roomName, roomOptions);
         roomOptions.IsVisible = true;
         roomOptions.IsOpen = true;
         Debug.Log($"Creating Room: {name}");
-        roomName = roomInputField.text;
 
     }
 
@@ -108,7 +138,15 @@ public class PhotonNetworkManager : MonoBehaviourPunCallbacks
         GameManagerMultiplayer.Instance.OpenMenu(EMenuName.WaitingArea);
         PhotonNetwork.AutomaticallySyncScene = true;
     }
-    
+
+    public void OnJoinRoomButtonPressed()
+    {
+        string selectedRoomName = roomName;  // Or fetch from the UI element that shows the room name.
+        PhotonNetwork.JoinRoom(selectedRoomName);
+        Debug.Log($"Joining Room: {selectedRoomName}");
+    }
+
+
     public override void OnPlayerEnteredRoom(Player newPlayer)
     {
         base.OnPlayerEnteredRoom(newPlayer);
@@ -127,7 +165,6 @@ public class PhotonNetworkManager : MonoBehaviourPunCallbacks
     {
         base.OnJoinedRoom();
         roomName = UIManager.Instance.roomNameField.text;
-        
         PhotonNetwork.AutomaticallySyncScene = true;
 
         Debug.Log($"Joined Room: {PhotonNetwork.CurrentRoom.Name}");
@@ -230,6 +267,9 @@ public class PhotonNetworkManager : MonoBehaviourPunCallbacks
                 roomListScriptComponent.playersJoined.text = $"{i.PlayerCount}/{i.MaxPlayers}";
                 roomListScriptComponent.roomStatusImage.color = i.IsOpen ? Color.green : Color.red;
                 roomListScriptComponent.roomJoin.interactable = i.IsOpen;
+
+                // Set up a join button in the UI to manually join the room
+                roomListScriptComponent.roomJoin.onClick.AddListener(() => JoinRoom(i.Name));
             }
         }
     }
@@ -243,7 +283,6 @@ public class PhotonNetworkManager : MonoBehaviourPunCallbacks
         }
     }
 
-
     private void UpdatePlayerList()
     {
         foreach (Transform child in playerInfoParent.transform)
@@ -256,6 +295,12 @@ public class PhotonNetworkManager : MonoBehaviourPunCallbacks
             var playerInstance = Instantiate(playerInfo_, playerInfoParent.transform);
             playerInstance.playerName.text = player.NickName;
         }
+    }
+
+    private IEnumerator NewRoomCreated(float time)
+    {
+        yield return new WaitForSeconds(time);
+        CreateRoomBot();
     }
 
 }
