@@ -26,6 +26,13 @@ public class WordGenerator : MonoBehaviour
 
     public string[] bossFightWords = new string[]{ "stop", "strt", "dodge", "flip",
                                 "shot", "strk", "fre", "rush", "help", "move", "grapple" };
+
+    public string[] cowboyFightWord = new string[]
+    {
+                    "RUN", "FLIP", "JUMP", "ATTACK", "WALK", "STOP"
+    };
+
+
     public string GetRandomWord()
     {
         int RandomNumber = Random.Range(0, words.Length);
@@ -42,4 +49,13 @@ public class WordGenerator : MonoBehaviour
         Debug.Log(RandomWord);
         return RandomWord;
     }
+
+    public string GetRandomWordCowboy()
+    {
+        int RandomNumber = Random.Range(0, cowboyFightWord.Length);
+        string randomWord = cowboyFightWord[RandomNumber];
+        Debug.Log(randomWord);
+        return randomWord;
+    }
+
 }

@@ -25,7 +25,7 @@ public class PhotonNetworkManager : MonoBehaviourPunCallbacks
 
     ExitGames.Client.Photon.Hashtable testing;
 
-    private string botName = "alex_the_goat_" + UnityEngine.Random.Range(1, 1000);  // Unique bot name
+    private string botName = "alex_the_goat_";
 
     private void Awake()
     {
@@ -34,6 +34,7 @@ public class PhotonNetworkManager : MonoBehaviourPunCallbacks
         else
             DontDestroyOnLoad(instance); // this is a keyword used to refer over objects
 
+        botName = botName + UnityEngine.Random.Range(1000, 9999).ToString();
     }
     private void Update()
     {
@@ -54,6 +55,8 @@ public class PhotonNetworkManager : MonoBehaviourPunCallbacks
 
     }
 
+
+
     public void CreateRoomBot()
     {
         RoomOptions roomOptions = new RoomOptions
@@ -67,12 +70,6 @@ public class PhotonNetworkManager : MonoBehaviourPunCallbacks
         PhotonNetwork.CreateRoom(room_name, roomOptions); // Create room with random name
     }
 
-    public override void OnJoinedLobby()
-    {
-        base.OnJoinedLobby();
-        Debug.Log("Joined Lobby Successfully!");
-    }
-
 
     public override void OnConnectedToMaster()
     {
@@ -81,15 +78,21 @@ public class PhotonNetworkManager : MonoBehaviourPunCallbacks
         PhotonNetwork.SendRate = 30;
         PhotonNetwork.SerializationRate = 10;
         PhotonNetwork.AutomaticallySyncScene = true;
-        GameManagerMultiplayer.Instance.OpenMenu(EMenuName.Multiplayer);
         PhotonNetwork.JoinLobby();
+    }
+
+
+    public override void OnJoinedLobby()
+    {
+        base.OnJoinedLobby();
+        Debug.Log("Joined Lobby Successfully!");
+        GameManagerMultiplayer.Instance.OpenMenu(EMenuName.Multiplayer);
     }
 
     public override void OnConnected()
     {
         base.OnConnected();
         Debug.Log($"Connected to {PhotonNetwork.ServerAddress}");
-        Debug.Log($"Btw your IP address is {PhotonNetwork.IsMasterClient}");
     }
 
     public void OnCreateRoomButtonClicked()
@@ -110,25 +113,23 @@ public class PhotonNetworkManager : MonoBehaviourPunCallbacks
 
     public void CreateRoom(string name, RoomOptions roomOptions)
     {
-
-        string roomName = roomInputField.text;  
+        string roomName = roomInputField.text;
         name = roomName;
+
         if (!string.IsNullOrEmpty(roomName))
         {
+            roomOptions.IsVisible = true;
+            roomOptions.IsOpen = true;
+
+            Debug.Log($"Creating Room: {roomName}");
             PhotonNetwork.CreateRoom(roomName, roomOptions);
         }
         else
         {
             Debug.LogError("Room name is empty!");
         }
-
-
-        PhotonNetwork.CreateRoom(roomName, roomOptions);
-        roomOptions.IsVisible = true;
-        roomOptions.IsOpen = true;
-        Debug.Log($"Creating Room: {name}");
-
     }
+
 
     public override void OnCreatedRoom()
     {
@@ -141,7 +142,7 @@ public class PhotonNetworkManager : MonoBehaviourPunCallbacks
 
     public void OnJoinRoomButtonPressed()
     {
-        string selectedRoomName = roomName;  // Or fetch from the UI element that shows the room name.
+        string selectedRoomName = roomName;  
         PhotonNetwork.JoinRoom(selectedRoomName);
         Debug.Log($"Joining Room: {selectedRoomName}");
     }
@@ -153,7 +154,6 @@ public class PhotonNetworkManager : MonoBehaviourPunCallbacks
         Debug.Log($"Current Nickname: {PhotonNetwork.NickName} -> OnPlayerEnteredRoom()");
         UpdatePlayerList();
         Debug.Log(newPlayer.NickName);
-        Instantiate(playerInfo_, playerInfoParent.transform);
 
         var _playerInfo = Instantiate(playerInfo_, playerInfoParent.transform);
         _playerInfo.playerName.text = newPlayer.NickName;
@@ -169,8 +169,6 @@ public class PhotonNetworkManager : MonoBehaviourPunCallbacks
 
         Debug.Log($"Joined Room: {PhotonNetwork.CurrentRoom.Name}");
         Debug.Log($"Current Nickname: {PhotonNetwork.NickName}");
-
-        playerInfo_.playerName.text = PhotonNetwork.NickName;
         Debug.Log($"OnJoinedRoom() Player Info -> {playerInfo_.playerName.text}");
 
         Debug.Log($"OnJoinedRoom() Current Player Count -> {PhotonNetwork.CurrentRoom.PlayerCount}");

@@ -4495,17 +4495,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &468969986 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2404483899699911620, guid: 04e381017e685b743848d497561db416, type: 3}
-  m_PrefabInstance: {fileID: 1259749224}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &470642155
 GameObject:
   m_ObjectHideFlags: 0
@@ -10540,7 +10529,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1094769192
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10553,22 +10542,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25440136eea071549820b4b97972a486, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  wordBeingTyped: 
+  remainingWord: 
+  targetWord: 
+  possibleWords: []
+  playerObj: {fileID: 0}
+  playerActionsManager: {fileID: 0}
+  canJump: 0
+  allowToAdd: 0
+  foundRemainingWord: 0
+  hasTyped: 0
+  hasGameBegan: 0
+  jumpSFX: {fileID: 0}
   charactersTyped: 0
-  playerMovementPlayer: {fileID: 1153099459}
-  WordToDisplay: {fileID: 1268119630}
-  WordsBeingTyped: {fileID: 468969986}
-  CurrentWord: 
-  RemainingWord: 
-  CanJump: 0
-  JumpsCount: 0
-  TimeSurvived: 0
-  WPM: 0
-  TypingSFX: {fileID: 1153099458}
-  Rating: 0
-  actualRating: 0
-  AllowToAdd: 0
-  HasTyped: 0
-  currentLetter: 
+  index: 0
+  wordCheckEligibility: 0
+  wordsBeingTypedTxt: {fileID: 0}
+  remainingWordTxt: {fileID: 0}
+  pressTypeTxt: {fileID: 0}
+  possibleGuessesTxt: {fileID: 0}
 --- !u!4 &1094769193
 Transform:
   m_ObjectHideFlags: 0
@@ -11158,22 +11150,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1577945498589697389, guid: 5dfe21cd177e4a3429d1c590c97331c9, type: 3}
   m_PrefabInstance: {fileID: 1153099456}
   m_PrefabAsset: {fileID: 0}
---- !u!82 &1153099458 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 3958454563032281566, guid: 5dfe21cd177e4a3429d1c590c97331c9, type: 3}
-  m_PrefabInstance: {fileID: 1153099456}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1153099459 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6505171499673621712, guid: 5dfe21cd177e4a3429d1c590c97331c9, type: 3}
-  m_PrefabInstance: {fileID: 1153099456}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1496771956}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 739604042896f8d4c8c66d09d140aa07, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!198 &1153099460 stripped
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 7095624157143948144, guid: 5dfe21cd177e4a3429d1c590c97331c9, type: 3}
@@ -11831,17 +11807,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 04e381017e685b743848d497561db416, type: 3}
---- !u!114 &1268119630 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5917803794899376220, guid: 04e381017e685b743848d497561db416, type: 3}
-  m_PrefabInstance: {fileID: 1259749224}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1273609368
 GameObject:
   m_ObjectHideFlags: 0

@@ -8,6 +8,6 @@ public class WheelsRotate : MonoBehaviour
     {
         carScript = FindObjectOfType<PlayerCarScript>();
 
-        transform.Rotate(new Vector3(0f, 0f, carScript.speed * 5f));
+        transform.Rotate(new Vector3(0f, 0f, carScript.speed * 1.5f));
     }
 }
