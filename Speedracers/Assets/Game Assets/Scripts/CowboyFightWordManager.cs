@@ -17,6 +17,7 @@ public class CowboyFightWordManager : MonoBehaviour
 
     [Header("Text References")]
 
+    public List<string> wordsTyped = new List<string>();
     public TMP_Text wordBeingTypedTxt;
     public TMP_Text possibleWordsTxt;
 
@@ -25,9 +26,11 @@ public class CowboyFightWordManager : MonoBehaviour
     public CowboyPlayer player;
     public CowboyActionManager actionManager;
     public WordGenerator wordGenerator;
+    public AttackManager attackManager;
 
     [Header("Booleans")]
 
+    public bool isActionRunning = false;
     public bool canMove;
     public bool canJump;
     public bool allowToAdd;
@@ -50,6 +53,12 @@ public class CowboyFightWordManager : MonoBehaviour
     public GameObject rightHand;
     public GameObject[] keys;
     private GameObject currentKeyPressed;
+    private int index = 0;
+
+    [Header("Positions")]
+
+    private Vector3 startingPositionLeftHand;
+    private Vector3 startingPositionRightHand;
 
     private void Awake()
     {
@@ -66,7 +75,7 @@ public class CowboyFightWordManager : MonoBehaviour
     private void Start()
     {
         Time.timeScale = 0f;
-
+        attackManager = FindObjectOfType<AttackManager>();
         if(audioSourcePlayer != null)
         {
             audioSourcePlayer.Stop();
@@ -100,6 +109,25 @@ public class CowboyFightWordManager : MonoBehaviour
         {
             actionManager.ExecuteAction(targetWord);
         }
+
+        if (targetWord == "RUN")
+        {
+            Debug.Log("RUN!");
+            actionManager.ExecuteAction("RUN");
+        }
+
+        if (targetWord == "WALK")
+        {
+            Debug.Log("WALK!");
+            actionManager.ExecuteAction("WALK");
+        }
+
+        if (targetWord == "FLIP" && player.action == CurrentAction.Run)
+        {
+            player.action = CurrentAction.Idle;
+            player.StopPlayer();
+        }
+
     }
 
     void InputHandling()
@@ -118,6 +146,7 @@ public class CowboyFightWordManager : MonoBehaviour
                 charactersTyped++;
                 Time.timeScale = 1f;
                 CheckForPossibleGuesses(wordBeingTyped);
+                index++;
             }
         }
 
@@ -146,16 +175,14 @@ public class CowboyFightWordManager : MonoBehaviour
             leftHand.transform.position = new Vector2(currentKeyPressed.transform.position.x, currentKeyPressed.transform.position.y - 80f);
         }
 
-        if(distanceB < distanceA)
+        else if(distanceB < distanceA)
         {
             rightHand.transform.position = new Vector2(currentKeyPressed.transform.position.x, currentKeyPressed.transform.position.y - 80f);
         }
 
         else
         {
-            float num = UnityEngine.Random.Range(0f, 1f);
-
-            if(num > 0.5f)
+            if (UnityEngine.Random.value > 0.5f)
             {
                 leftHand.transform.position = new Vector2(currentKeyPressed.transform.position.x, currentKeyPressed.transform.position.y - 80f);
             }
@@ -200,8 +227,11 @@ public class CowboyFightWordManager : MonoBehaviour
                 wordBeingTypedTxt.text = "";
                 targetWord = possibleWords[i];
                 possibleWords.RemoveAt(i);
+                index = 0;
                 actionManager.ExecuteAction(matchedWord);
+                wordsTyped.Add(wordBeingTyped.ToUpper());
             }
         }
     }
+
 }

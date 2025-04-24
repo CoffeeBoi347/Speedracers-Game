@@ -13,6 +13,7 @@ public class PhotonNetworkManager : MonoBehaviourPunCallbacks
     [SerializeField] private Transform roomListParent;
     public static PhotonNetworkManager instance; // instance of the network manager
     public GameObject Nickname;
+    public string playerNickname;
     public TMP_Text pingText;
     [SerializeField] private playerInfo playerInfo_;
     [SerializeField] private GameObject playerInfoParent;
@@ -50,6 +51,7 @@ public class PhotonNetworkManager : MonoBehaviourPunCallbacks
         {
             PlayerPrefs.SetString("PlayerName", playerName);
             PhotonNetwork.NickName = playerName;
+            playerNickname = playerName;
         }
         Debug.Log($"Current Nickname: {PhotonNetwork.NickName}");
 

@@ -44,4 +44,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ClickManager.unity
     guid: 7a680a474e2d8aa418f6b5b9c4feb3f1
+  - enabled: 1
+    path: Assets/Scenes/Levels/Level 3 Pre.unity
+    guid: 10292fda16d7af54f973157e86773cba
   m_configObjects: {}

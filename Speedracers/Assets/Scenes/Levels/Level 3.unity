@@ -743,6 +743,10 @@ PrefabInstance:
       propertyPath: wordManager
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 7936079004022015231, guid: 5dfe21cd177e4a3429d1c590c97331c9, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b1ea020609744454c92d74aace886317, type: 3}
     - target: {fileID: 8053419677968253648, guid: 5dfe21cd177e4a3429d1c590c97331c9, type: 3}
       propertyPath: m_Name
       value: Player
@@ -13496,6 +13500,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 301563939406690217, guid: 04e381017e685b743848d497561db416, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3953592308582852906, guid: 04e381017e685b743848d497561db416, type: 3}
       propertyPath: player
       value: 

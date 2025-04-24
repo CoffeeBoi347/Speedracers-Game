@@ -29,6 +29,7 @@ public class WordManager : MonoBehaviour
     public string currentLetter;
     private void Start()
     {
+        Cursor.lockState = CursorLockMode.Locked;
         AllowToAdd = false;
         TypingSFX.Stop();
         playerMovementPlayer = FindObjectOfType<PlaneMovementPlayer>();

@@ -10150,7 +10150,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneIndex: 3
   wordManager: {fileID: 0}
-  JumpPower: 3
+  JumpPower: 4
   rb: {fileID: 625126058172106246}
   SmokeFX: {fileID: 7095624157143948144}
   speed: 10
@@ -10163,6 +10163,7 @@ MonoBehaviour:
   blastStart: {fileID: 0}
   CollidedWithPPowerFX: 0
   Explosion: {fileID: 1991730957483384531}
+  endCollide: 0
 --- !u!82 &3958454563032281566
 AudioSource:
   m_ObjectHideFlags: 0
@@ -10271,9 +10272,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48844a2949bebb145a0e8e1deaa0ab90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bullet: {fileID: 2906812152629528767, guid: f4e46339cb4707d43868abaa10b9763d, type: 3}
+  bulletPrefab: {fileID: 0}
   placeToShoot: {fileID: 5341890824283484927}
   delay: 0.25
+  allowToShoot: 0
+  playerRb: {fileID: 0}
 --- !u!233 &8462901871311204135
 HingeJoint2D:
   m_ObjectHideFlags: 0
@@ -10290,7 +10293,7 @@ HingeJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: -2.0021088, y: 1.5546393}
-  m_ConnectedAnchor: {x: -2.0021145, y: 1.5546396}
+  m_ConnectedAnchor: {x: -2.0021145, y: 1.5546359}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -10311,9 +10314,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48844a2949bebb145a0e8e1deaa0ab90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bullet: {fileID: 2906812152629528767, guid: f4e46339cb4707d43868abaa10b9763d, type: 3}
+  bulletPrefab: {fileID: 0}
   placeToShoot: {fileID: 872197600721067052}
   delay: 0.25
+  allowToShoot: 0
+  playerRb: {fileID: 0}
 --- !u!1 &9180319324856623220
 GameObject:
   m_ObjectHideFlags: 0

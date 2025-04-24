@@ -13,15 +13,16 @@ public class BulletShoot : MonoBehaviour
         {
             rb = GetComponent<Rigidbody2D>();
         }
-
-        // Apply force to move upwards
         rb.velocity = new Vector2(velocity, 0f);
+        StartCoroutine(DestroyGameObj(5f));
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        // Prevent bullets from instantly disappearing by ignoring "Player"
-        if (collision.gameObject.CompareTag("Player")) return;
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            return;
+        }
 
         Destroy(gameObject);
     }
